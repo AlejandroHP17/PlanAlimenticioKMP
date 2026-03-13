@@ -1,0 +1,5 @@
+litechnology.com.mx.planalimenticiokmp.test.composeApp-androidTest-0 /Users/1073688/Documents/Pelki/PlanAlimenticioKMP/composeApp/build/generated/res/resValues/androidTest/debug
+litechnology.com.mx.planalimenticiokmp.test.composeApp-updated_navigation_xml-1 /Users/1073688/Documents/Pelki/PlanAlimenticioKMP/composeApp/build/generated/updated_navigation_xml/debugAndroidTest
+litechnology.com.mx.planalimenticiokmp.test.composeApp-mergeDebugAndroidTestResources-2 /Users/1073688/Documents/Pelki/PlanAlimenticioKMP/composeApp/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+litechnology.com.mx.planalimenticiokmp.test.composeApp-mergeDebugAndroidTestResources-3 /Users/1073688/Documents/Pelki/PlanAlimenticioKMP/composeApp/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+litechnology.com.mx.planalimenticiokmp.test.composeApp-debugAndroidTest-4 /Users/1073688/Documents/Pelki/PlanAlimenticioKMP/composeApp/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

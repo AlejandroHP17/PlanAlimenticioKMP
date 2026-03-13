@@ -27,8 +27,8 @@ class BaseApplication : Application() {
 
         // Inicializa Koin
         startKoin {
-            androidLogger()
             androidContext(this@BaseApplication)
+            androidLogger()
             modules(
                 platformDatabaseModule,
                 databaseModule,
