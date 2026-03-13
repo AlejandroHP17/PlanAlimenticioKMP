@@ -1,0 +1,7 @@
+<resources>
+    <string name="title_menu">Grupos Alimenticios</string>
+    <string name="all_categories">Todas las Categorias</string>
+
+    <!-- Content descriptions -->
+    <string name="content_image">Imagen</string>
+</resources>

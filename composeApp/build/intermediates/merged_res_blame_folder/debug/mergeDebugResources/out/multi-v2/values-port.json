@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "litechnology.com.mx.planalimenticiokmp.composeApp-mergeDebugResources-52:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/1073688/Documents/Extras/gradle-8.14.3/caches/9.3.1/transforms/73aa5072e2e685a70fdea9ccc9e39295/transformed/appcompat-1.7.1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

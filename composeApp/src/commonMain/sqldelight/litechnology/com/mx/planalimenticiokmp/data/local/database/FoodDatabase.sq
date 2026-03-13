@@ -1,0 +1,62 @@
+CREATE TABLE FoodEntity (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    category TEXT NOT NULL,
+    idCategory INTEGER NOT NULL,
+    food TEXT NOT NULL,
+    suggestedQuantity REAL NOT NULL,
+    unit TEXT NOT NULL,
+    netWeightG TEXT NOT NULL,
+    roundedGrossWeightG INTEGER NOT NULL,
+    energyKcal INTEGER NOT NULL,
+    proteinG REAL,
+    lipidsG REAL,
+    carbohydratesG REAL,
+    fiverG REAL,
+    vitaminAUgRe REAL,
+    ascorbicAcidMg REAL,
+    folicAcidUg REAL,
+    ironNoHemMg REAL,
+    potassiumMg REAL,
+    hypoglycemicIndex REAL,
+    hypoglycemicLoad REAL,
+    sugarPerEquivalentG REAL,
+    calciumMg REAL,
+    ironMg REAL,
+    sodiumMg REAL,
+    cholesterolMg REAL,
+    seleniumMg REAL,
+    phosphorusMg REAL,
+    agSaturatedG REAL,
+    agMonounsaturatedG REAL,
+    agPolyunsaturatedG REAL
+);
+
+selectAll:
+SELECT * FROM FoodEntity;
+
+selectById:
+SELECT * FROM FoodEntity WHERE id = :id;
+
+selectAllByCategory:
+SELECT * FROM FoodEntity WHERE category = :category;
+
+searchFoods:
+SELECT * FROM FoodEntity WHERE food LIKE ('%' || :searchQuery || '%');
+
+getFoodCountByCategory:
+SELECT COUNT(*) FROM FoodEntity WHERE category = :category;
+
+getAllCategories:
+SELECT DISTINCT category FROM FoodEntity ORDER BY category ASC;
+
+insertFood:
+INSERT OR REPLACE INTO FoodEntity (
+    category, idCategory, food, suggestedQuantity, unit, netWeightG,
+    roundedGrossWeightG, energyKcal, proteinG, lipidsG, carbohydratesG,
+    fiverG, vitaminAUgRe, ascorbicAcidMg, folicAcidUg, ironNoHemMg,
+    potassiumMg, hypoglycemicIndex, hypoglycemicLoad, sugarPerEquivalentG,
+    calciumMg, ironMg, sodiumMg, cholesterolMg, seleniumMg, phosphorusMg,
+    agSaturatedG, agMonounsaturatedG, agPolyunsaturatedG
+) VALUES (
+    ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+);
