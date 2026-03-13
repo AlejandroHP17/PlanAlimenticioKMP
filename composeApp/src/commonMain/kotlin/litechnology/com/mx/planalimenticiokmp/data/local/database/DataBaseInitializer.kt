@@ -1,5 +1,7 @@
 package litechnology.com.mx.planalimenticiokmp.data.local.database
 
+import co.touchlab.kermit.Logger
+import kotlinx.coroutines.withContext
 import litechnology.com.mx.planalimenticiokmp.domain.repository.FoodRepository
 import litechnology.com.mx.planalimenticiokmp.util.Constants
 import kotlinx.serialization.json.Json
@@ -19,8 +21,7 @@ import litechnology.com.mx.planalimenticiokmp.domain.model.Food
  */
 class DatabaseInitializer(
     private val assetLoader: AssetLoader,
-    private val repository: FoodRepository,
-    private val jsonFileName: String = Constants.NAME_JSON
+    private val repository: FoodRepository
 ) {
     private val json = Json {
         ignoreUnknownKeys = true
@@ -29,32 +30,30 @@ class DatabaseInitializer(
 
     /**
      * Inicializa la base de datos si está vacía.
-     * Lee el archivo JSON de assets y lo inserta en la base de datos.
-     *
-     * @return true si se inicializó la base de datos, false si ya estaba poblada
+     * @return true si se insertaron datos, false si ya existían
      */
-    suspend fun initializeIfNeeded(): Boolean {
-        return try {
-            // Verifica si la base de datos ya está poblada
+    suspend fun initializeIfNeeded(): Boolean = withContext(kotlinx.coroutines.Dispatchers.Default) {
+        val logger = Logger.withTag("DatabaseInitializer")
+        try {
             val existingFoods = repository.getAllFoodsSuspend()
-            if (existingFoods.isNotEmpty()) {
-                return false // Ya está inicializada
-            }
+            if (existingFoods.isNotEmpty()) return@withContext false
 
-            // Lee el archivo JSON de assets
-            val jsonString = assetLoader.loadJsonFile(jsonFileName) ?: return false
+            // Lee JSON multiplataforma
+            val jsonString = assetLoader.loadJsonFile("files/alimentos_smae.json")
+                ?: return@withContext false
 
-            // Parsea el JSON a una lista de FoodJsonResponse
+            // Parsea JSON
             val jsonResponses: List<FoodJsonResponse> = json.decodeFromString(jsonString)
 
-            // Convierte los modelos JSON a Food (modelo de dominio)
-            val foods: List<Food> = jsonResponses.map { it.toFood() }
+            // Convierte a modelo de dominio
+            val foods = jsonResponses.map { it.toFood() }
 
-            // Inserta los alimentos en la base de datos
+            // Inserta en la DB
             repository.insertAllFoods(foods)
+            logger.d { "✅ Base de datos inicializada correctamente con ${foods.size} alimentos" }
             true
         } catch (e: Exception) {
-            e.printStackTrace()
+            logger.e { "❌ Error inicializando DB: ${e.message}" }
             false
         }
     }

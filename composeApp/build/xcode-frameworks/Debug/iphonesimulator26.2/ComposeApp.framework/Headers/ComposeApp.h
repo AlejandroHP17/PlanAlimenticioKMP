@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class ComposeAppAppDispatchers, ComposeAppAssetLoader, ComposeAppConstants, ComposeAppDatabaseDriverFactory, ComposeAppDatabaseInitializer, ComposeAppFood, ComposeAppFoodDatabaseCompanion, ComposeAppFoodDatabaseQueries, ComposeAppFoodEntity, ComposeAppFoodEntityMetadata, ComposeAppFoodJsonResponse, ComposeAppFoodJsonResponseCompanion, ComposeAppFoodMapper, ComposeAppFoodUnit, ComposeAppGetAllCategoriesUseCase, ComposeAppInitializeResult, ComposeAppInitializeResultAlreadyInitialized, ComposeAppInitializeResultError, ComposeAppInitializeResultSuccess, ComposeAppKermitLogger, ComposeAppKermitLoggerCompanion, ComposeAppKermit_coreBaseLogger, ComposeAppKermit_coreLogWriter, ComposeAppKermit_coreSeverity, ComposeAppKotlinAbstractCoroutineContextElement, ComposeAppKotlinAbstractCoroutineContextKey<B, E>, ComposeAppKotlinArray<T>, ComposeAppKotlinByteArray, ComposeAppKotlinByteIterator, ComposeAppKotlinEnum<E>, ComposeAppKotlinEnumCompanion, ComposeAppKotlinException, ComposeAppKotlinIllegalStateException, ComposeAppKotlinIntIterator, ComposeAppKotlinIntProgression, ComposeAppKotlinIntProgressionCompanion, ComposeAppKotlinIntRange, ComposeAppKotlinIntRangeCompanion, ComposeAppKotlinMatchGroup, ComposeAppKotlinMatchResultDestructured, ComposeAppKotlinNothing, ComposeAppKotlinRegex, ComposeAppKotlinRegexCompanion, ComposeAppKotlinRegexOption, ComposeAppKotlinRuntimeException, ComposeAppKotlinThrowable, ComposeAppKotlinUnit, ComposeAppKotlinx_coroutines_coreCoroutineDispatcher, ComposeAppKotlinx_coroutines_coreCoroutineDispatcherKey, ComposeAppKotlinx_serialization_coreSerialKind, ComposeAppKotlinx_serialization_coreSerializersModule, ComposeAppLifecycle_viewmodelViewModel, ComposeAppMenuState, ComposeAppModelItemCard, ComposeAppModelRegex, ComposeAppModelSubItemCard, ComposeAppRuntimeAfterVersion, ComposeAppRuntimeBaseTransacterImpl, ComposeAppRuntimeExecutableQuery<__covariant RowType>, ComposeAppRuntimeQuery<__covariant RowType>, ComposeAppRuntimeTransacterImpl, ComposeAppRuntimeTransacterTransaction, ComposeAppSafeDoubleSerializer, ComposeAppSafeFloatSerializer, ComposeAppToastType, UIViewController;
+@class ComposeAppAppDispatchers, ComposeAppAppInitializer, ComposeAppAssetLoader, ComposeAppConstants, ComposeAppDatabaseDriverFactory, ComposeAppDatabaseInitializer, ComposeAppFood, ComposeAppFoodDatabaseCompanion, ComposeAppFoodDatabaseQueries, ComposeAppFoodEntity, ComposeAppFoodEntityMetadata, ComposeAppFoodJsonResponse, ComposeAppFoodJsonResponseCompanion, ComposeAppFoodMapper, ComposeAppFoodUnit, ComposeAppGetAllCategoriesUseCase, ComposeAppInitializeDataBaseUseCase, ComposeAppInitializeResult, ComposeAppInitializeResultAlreadyInitialized, ComposeAppInitializeResultSuccess, ComposeAppKermitLogger, ComposeAppKermitLoggerCompanion, ComposeAppKermit_coreBaseLogger, ComposeAppKermit_coreLogWriter, ComposeAppKermit_coreSeverity, ComposeAppKoin_coreBeanDefinition<T>, ComposeAppKoin_coreCallbacks<T>, ComposeAppKoin_coreCoreResolver, ComposeAppKoin_coreExtensionManager, ComposeAppKoin_coreInstanceFactory<T>, ComposeAppKoin_coreInstanceFactoryCompanion, ComposeAppKoin_coreInstanceRegistry, ComposeAppKoin_coreKind, ComposeAppKoin_coreKoin, ComposeAppKoin_coreKoinApplication, ComposeAppKoin_coreKoinApplicationCompanion, ComposeAppKoin_coreKoinDefinition<R>, ComposeAppKoin_coreKoinOption, ComposeAppKoin_coreLevel, ComposeAppKoin_coreLockable, ComposeAppKoin_coreLogger, ComposeAppKoin_coreModule, ComposeAppKoin_coreOptionRegistry, ComposeAppKoin_coreParametersHolder, ComposeAppKoin_corePropertyRegistry, ComposeAppKoin_coreResolutionContext, ComposeAppKoin_coreScope, ComposeAppKoin_coreScopeDSL, ComposeAppKoin_coreScopeRegistry, ComposeAppKoin_coreScopeRegistryCompanion, ComposeAppKoin_coreSingleInstanceFactory<T>, ComposeAppKoin_coreTypeQualifier, ComposeAppKotlinAbstractCoroutineContextElement, ComposeAppKotlinAbstractCoroutineContextKey<B, E>, ComposeAppKotlinArray<T>, ComposeAppKotlinByteArray, ComposeAppKotlinByteIterator, ComposeAppKotlinEnum<E>, ComposeAppKotlinEnumCompanion, ComposeAppKotlinException, ComposeAppKotlinIllegalStateException, ComposeAppKotlinIntIterator, ComposeAppKotlinIntProgression, ComposeAppKotlinIntProgressionCompanion, ComposeAppKotlinIntRange, ComposeAppKotlinIntRangeCompanion, ComposeAppKotlinLazyThreadSafetyMode, ComposeAppKotlinMatchGroup, ComposeAppKotlinMatchResultDestructured, ComposeAppKotlinNothing, ComposeAppKotlinPair<__covariant A, __covariant B>, ComposeAppKotlinRegex, ComposeAppKotlinRegexCompanion, ComposeAppKotlinRegexOption, ComposeAppKotlinRuntimeException, ComposeAppKotlinThrowable, ComposeAppKotlinUnit, ComposeAppKotlinx_coroutines_coreCoroutineDispatcher, ComposeAppKotlinx_coroutines_coreCoroutineDispatcherKey, ComposeAppKotlinx_serialization_coreSerialKind, ComposeAppKotlinx_serialization_coreSerializersModule, ComposeAppLifecycle_viewmodelViewModel, ComposeAppMenuState, ComposeAppModelItemCard, ComposeAppModelRegex, ComposeAppModelSubItemCard, ComposeAppRuntimeAfterVersion, ComposeAppRuntimeBaseTransacterImpl, ComposeAppRuntimeExecutableQuery<__covariant RowType>, ComposeAppRuntimeQuery<__covariant RowType>, ComposeAppRuntimeTransacterImpl, ComposeAppRuntimeTransacterTransaction, ComposeAppSafeDoubleSerializer, ComposeAppSafeFloatSerializer, ComposeAppToastType, UIViewController;
 
-@protocol ComposeAppCategoryRepository, ComposeAppFoodDatabase, ComposeAppFoodRepository, ComposeAppKermit_coreLoggerConfig, ComposeAppKermit_coreMutableLoggerConfig, ComposeAppKotlinAnnotation, ComposeAppKotlinAutoCloseable, ComposeAppKotlinClosedRange, ComposeAppKotlinCollection, ComposeAppKotlinComparable, ComposeAppKotlinContinuation, ComposeAppKotlinContinuationInterceptor, ComposeAppKotlinCoroutineContext, ComposeAppKotlinCoroutineContextElement, ComposeAppKotlinCoroutineContextKey, ComposeAppKotlinIterable, ComposeAppKotlinIterator, ComposeAppKotlinKAnnotatedElement, ComposeAppKotlinKClass, ComposeAppKotlinKClassifier, ComposeAppKotlinKDeclarationContainer, ComposeAppKotlinMatchGroupCollection, ComposeAppKotlinMatchResult, ComposeAppKotlinOpenEndRange, ComposeAppKotlinSequence, ComposeAppKotlinx_coroutines_coreCoroutineScope, ComposeAppKotlinx_coroutines_coreFlow, ComposeAppKotlinx_coroutines_coreFlowCollector, ComposeAppKotlinx_coroutines_coreRunnable, ComposeAppKotlinx_coroutines_coreSharedFlow, ComposeAppKotlinx_coroutines_coreStateFlow, ComposeAppKotlinx_serialization_coreCompositeDecoder, ComposeAppKotlinx_serialization_coreCompositeEncoder, ComposeAppKotlinx_serialization_coreDecoder, ComposeAppKotlinx_serialization_coreDeserializationStrategy, ComposeAppKotlinx_serialization_coreEncoder, ComposeAppKotlinx_serialization_coreKSerializer, ComposeAppKotlinx_serialization_coreSerialDescriptor, ComposeAppKotlinx_serialization_coreSerializationStrategy, ComposeAppKotlinx_serialization_coreSerializersModuleCollector, ComposeAppPlatform, ComposeAppRuntimeCloseable, ComposeAppRuntimeQueryListener, ComposeAppRuntimeQueryResult, ComposeAppRuntimeSqlCursor, ComposeAppRuntimeSqlDriver, ComposeAppRuntimeSqlPreparedStatement, ComposeAppRuntimeSqlSchema, ComposeAppRuntimeTransacter, ComposeAppRuntimeTransacterBase, ComposeAppRuntimeTransactionCallbacks, ComposeAppRuntimeTransactionWithReturn, ComposeAppRuntimeTransactionWithoutReturn;
+@protocol ComposeAppAssetLoader, ComposeAppCategoryRepository, ComposeAppFoodDatabase, ComposeAppFoodRepository, ComposeAppKermit_coreLoggerConfig, ComposeAppKermit_coreMutableLoggerConfig, ComposeAppKoin_coreKoinComponent, ComposeAppKoin_coreKoinExtension, ComposeAppKoin_coreKoinScopeComponent, ComposeAppKoin_coreQualifier, ComposeAppKoin_coreResolutionExtension, ComposeAppKoin_coreScopeCallback, ComposeAppKotlinAnnotation, ComposeAppKotlinAutoCloseable, ComposeAppKotlinClosedRange, ComposeAppKotlinCollection, ComposeAppKotlinComparable, ComposeAppKotlinContinuation, ComposeAppKotlinContinuationInterceptor, ComposeAppKotlinCoroutineContext, ComposeAppKotlinCoroutineContextElement, ComposeAppKotlinCoroutineContextKey, ComposeAppKotlinIterable, ComposeAppKotlinIterator, ComposeAppKotlinKAnnotatedElement, ComposeAppKotlinKClass, ComposeAppKotlinKClassifier, ComposeAppKotlinKDeclarationContainer, ComposeAppKotlinLazy, ComposeAppKotlinMatchGroupCollection, ComposeAppKotlinMatchResult, ComposeAppKotlinOpenEndRange, ComposeAppKotlinSequence, ComposeAppKotlinx_coroutines_coreCoroutineScope, ComposeAppKotlinx_coroutines_coreFlow, ComposeAppKotlinx_coroutines_coreFlowCollector, ComposeAppKotlinx_coroutines_coreRunnable, ComposeAppKotlinx_coroutines_coreSharedFlow, ComposeAppKotlinx_coroutines_coreStateFlow, ComposeAppKotlinx_serialization_coreCompositeDecoder, ComposeAppKotlinx_serialization_coreCompositeEncoder, ComposeAppKotlinx_serialization_coreDecoder, ComposeAppKotlinx_serialization_coreDeserializationStrategy, ComposeAppKotlinx_serialization_coreEncoder, ComposeAppKotlinx_serialization_coreKSerializer, ComposeAppKotlinx_serialization_coreSerialDescriptor, ComposeAppKotlinx_serialization_coreSerializationStrategy, ComposeAppKotlinx_serialization_coreSerializersModuleCollector, ComposeAppPlatform, ComposeAppRuntimeCloseable, ComposeAppRuntimeQueryListener, ComposeAppRuntimeQueryResult, ComposeAppRuntimeSqlCursor, ComposeAppRuntimeSqlDriver, ComposeAppRuntimeSqlPreparedStatement, ComposeAppRuntimeSqlSchema, ComposeAppRuntimeTransacter, ComposeAppRuntimeTransacterBase, ComposeAppRuntimeTransactionCallbacks, ComposeAppRuntimeTransactionWithReturn, ComposeAppRuntimeTransactionWithoutReturn;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -145,11 +145,38 @@ __attribute__((swift_name("KotlinBoolean")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Greeting")))
-@interface ComposeAppGreeting : ComposeAppBase
+__attribute__((swift_name("AppInitializer")))
+@interface ComposeAppAppInitializer : ComposeAppBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)appInitializer __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) ComposeAppAppInitializer *shared __attribute__((swift_name("shared")));
+- (void)doInitInitializeDBUseCase:(ComposeAppInitializeDataBaseUseCase *)initializeDBUseCase __attribute__((swift_name("doInit(initializeDBUseCase:)")));
+@property ComposeAppInitializeDataBaseUseCase *initializeDatabaseUseCase __attribute__((swift_name("initializeDatabaseUseCase")));
+@end
+
+__attribute__((swift_name("AssetLoader")))
+@protocol ComposeAppAssetLoader
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)loadJsonFilePath:(NSString *)path completionHandler:(void (^)(NSString * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("loadJsonFile(path:completionHandler:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("IOSAssetLoader")))
+@interface ComposeAppIOSAssetLoader : ComposeAppBase <ComposeAppAssetLoader>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (NSString *)greet __attribute__((swift_name("greet()")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)loadJsonFilePath:(NSString *)path completionHandler:(void (^)(NSString * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("loadJsonFile(path:completionHandler:)")));
 @end
 
 __attribute__((swift_name("Platform")))
@@ -248,7 +275,7 @@ __attribute__((swift_name("FoodUnit")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AssetLoader")))
+__attribute__((swift_name("AssetLoader_")))
 @interface ComposeAppAssetLoader : ComposeAppBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
@@ -275,13 +302,11 @@ __attribute__((swift_name("AssetLoader")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("DatabaseInitializer")))
 @interface ComposeAppDatabaseInitializer : ComposeAppBase
-- (instancetype)initWithAssetLoader:(ComposeAppAssetLoader *)assetLoader repository:(id<ComposeAppFoodRepository>)repository jsonFileName:(NSString *)jsonFileName __attribute__((swift_name("init(assetLoader:repository:jsonFileName:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithAssetLoader:(ComposeAppAssetLoader *)assetLoader repository:(id<ComposeAppFoodRepository>)repository __attribute__((swift_name("init(assetLoader:repository:)"))) __attribute__((objc_designated_initializer));
 
 /**
  * Inicializa la base de datos si está vacía.
- * Lee el archivo JSON de assets y lo inserta en la base de datos.
- *
- * @return true si se inicializó la base de datos, false si ya estaba poblada
+ * @return true si se insertaron datos, false si ya existían
  *
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
@@ -1441,94 +1466,39 @@ __attribute__((swift_name("SearchFoodsUseCase")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InitializeDataBaseUseCase")))
 @interface ComposeAppInitializeDataBaseUseCase : ComposeAppBase
-- (instancetype)initWithDatabaseInitializer:(ComposeAppDatabaseInitializer *)databaseInitializer dispatcher:(ComposeAppAppDispatchers *)dispatcher __attribute__((swift_name("init(databaseInitializer:dispatcher:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithDatabaseInitializer:(ComposeAppDatabaseInitializer *)databaseInitializer __attribute__((swift_name("init(databaseInitializer:)"))) __attribute__((objc_designated_initializer));
 
 /**
- * Ejecuta la inicialización de la base de datos si es necesaria.
- *
- * @return Resultado de la inicialización:
- *         - InitializeResult.Success si se inicializó correctamente
- *         - InitializeResult.AlreadyInitialized si ya estaba inicializada
- *         - InitializeResult.Error si hubo un error
- *
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)invokeWithCompletionHandler:(void (^)(ComposeAppInitializeResult * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(completionHandler:)")));
 @end
 
-
-/**
- * Resultado de la inicialización de la base de datos.
- */
 __attribute__((swift_name("InitializeResult")))
 @interface ComposeAppInitializeResult : ComposeAppBase
 @end
 
-
-/**
- * La base de datos ya estaba inicializada.
- */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InitializeResult.AlreadyInitialized")))
 @interface ComposeAppInitializeResultAlreadyInitialized : ComposeAppInitializeResult
 + (instancetype)alloc __attribute__((unavailable));
-
-/**
- * La base de datos ya estaba inicializada.
- */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)alreadyInitialized __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) ComposeAppInitializeResultAlreadyInitialized *shared __attribute__((swift_name("shared")));
 @end
 
-
-/**
- * Ocurrió un error durante la inicialización.
- *
- * @param message Mensaje de error
- */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InitializeResult.Error")))
 @interface ComposeAppInitializeResultError : ComposeAppInitializeResult
 - (instancetype)initWithMessage:(NSString *)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (ComposeAppInitializeResultError *)doCopyMessage:(NSString *)message __attribute__((swift_name("doCopy(message:)")));
-
-/**
- * Ocurrió un error durante la inicialización.
- *
- * @param message Mensaje de error
- */
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/**
- * Ocurrió un error durante la inicialización.
- *
- * @param message Mensaje de error
- */
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/**
- * Ocurrió un error durante la inicialización.
- *
- * @param message Mensaje de error
- */
-- (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *message __attribute__((swift_name("message")));
 @end
 
-
-/**
- * La base de datos se inicializó correctamente.
- */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InitializeResult.Success")))
 @interface ComposeAppInitializeResultSuccess : ComposeAppInitializeResult
 + (instancetype)alloc __attribute__((unavailable));
-
-/**
- * La base de datos se inicializó correctamente.
- */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)success __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) ComposeAppInitializeResultSuccess *shared __attribute__((swift_name("shared")));
@@ -1593,7 +1563,7 @@ __attribute__((swift_name("Lifecycle_viewmodelViewModel")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MenuViewModel")))
 @interface ComposeAppMenuViewModel : ComposeAppLifecycle_viewmodelViewModel
-- (instancetype)initWithGetAllCategoriesUseCase:(ComposeAppGetAllCategoriesUseCase *)getAllCategoriesUseCase __attribute__((swift_name("init(getAllCategoriesUseCase:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithGetAllCategoriesUseCase:(ComposeAppGetAllCategoriesUseCase *)getAllCategoriesUseCase initializeDataBaseUseCase:(ComposeAppInitializeDataBaseUseCase *)initializeDataBaseUseCase __attribute__((swift_name("init(getAllCategoriesUseCase:initializeDataBaseUseCase:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 - (instancetype)initWithCloseables:(ComposeAppKotlinArray<id<ComposeAppKotlinAutoCloseable>> *)closeables __attribute__((swift_name("init(closeables:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
@@ -1602,9 +1572,7 @@ __attribute__((swift_name("MenuViewModel")))
 
 /**
  * Obtiene las categorías de la base de datos.
- * Espera a que la base de datos esté inicializada antes de cargar las categorías.
- * Esto resuelve el problema de que en la primera instalación, la UI se renderiza
- * antes de que la base de datos termine de inicializarse.
+ * Asegura que la base de datos esté inicializada antes de cargar las categorías.
  */
 - (void)getCategories __attribute__((swift_name("getCategories()")));
 @property (readonly) ComposeAppKermitLogger *logger __attribute__((swift_name("logger")));
@@ -1833,6 +1801,12 @@ __attribute__((swift_name("ModelSubItemCard")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AppInitializerKt")))
+@interface ComposeAppAppInitializerKt : ComposeAppBase
++ (id<ComposeAppKotlinx_coroutines_coreCoroutineScope>)createApplicationScope __attribute__((swift_name("createApplicationScope()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ColorKt")))
 @interface ComposeAppColorKt : ComposeAppBase
 @property (class, readonly) uint64_t aceiteYGrasaProteina __attribute__((swift_name("aceiteYGrasaProteina")));
@@ -1927,6 +1901,18 @@ __attribute__((swift_name("ColorKt")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DatabaseModule_iosKt")))
+@interface ComposeAppDatabaseModule_iosKt : ComposeAppBase
+@property (class, readonly) ComposeAppKoin_coreModule *platformDatabaseModule __attribute__((swift_name("platformDatabaseModule")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DatabaseModuleKt")))
+@interface ComposeAppDatabaseModuleKt : ComposeAppBase
+@property (class, readonly) ComposeAppKoin_coreModule *databaseModule __attribute__((swift_name("databaseModule")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("DimenKt")))
 @interface ComposeAppDimenKt : ComposeAppBase
 @property (class, readonly) float activityHorizontalMargin __attribute__((swift_name("activityHorizontalMargin")));
@@ -1946,6 +1932,13 @@ __attribute__((swift_name("DimenKt")))
 @property (class, readonly) int64_t sizeTextCard __attribute__((swift_name("sizeTextCard")));
 @property (class, readonly) int64_t sizeTitleAlert __attribute__((swift_name("sizeTitleAlert")));
 @property (class, readonly) int64_t sizeTitleCard __attribute__((swift_name("sizeTitleCard")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KoinKt")))
+@interface ComposeAppKoinKt : ComposeAppBase
++ (ComposeAppKoin_coreKoinApplication *)doInitKoin __attribute__((swift_name("doInitKoin()")));
++ (ComposeAppKoin_coreKoinApplication *)doInitKoinAppDeclaration:(void (^)(ComposeAppKoin_coreKoinApplication *))appDeclaration __attribute__((swift_name("doInitKoin(appDeclaration:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -1981,24 +1974,15 @@ __attribute__((swift_name("StringKt")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinEnumCompanion")))
-@interface ComposeAppKotlinEnumCompanion : ComposeAppBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) ComposeAppKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
+__attribute__((swift_name("UseCaseModuleKt")))
+@interface ComposeAppUseCaseModuleKt : ComposeAppBase
+@property (class, readonly) ComposeAppKoin_coreModule *useCaseModule __attribute__((swift_name("useCaseModule")));
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinArray")))
-@interface ComposeAppKotlinArray<T> : ComposeAppBase
-+ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(ComposeAppInt *))init __attribute__((swift_name("init(size:init:)")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
-- (id<ComposeAppKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
-- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
-@property (readonly) int32_t size __attribute__((swift_name("size")));
+__attribute__((swift_name("HomeModuleKt")))
+@interface ComposeAppHomeModuleKt : ComposeAppBase
+@property (class, readonly) ComposeAppKoin_coreModule *homeModule __attribute__((swift_name("homeModule")));
 @end
 
 __attribute__((swift_name("KotlinThrowable")))
@@ -2060,6 +2044,27 @@ __attribute__((swift_name("KotlinCancellationException")))
 - (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithCause:(ComposeAppKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithMessage:(NSString * _Nullable)message cause:(ComposeAppKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinEnumCompanion")))
+@interface ComposeAppKotlinEnumCompanion : ComposeAppBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) ComposeAppKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinArray")))
+@interface ComposeAppKotlinArray<T> : ComposeAppBase
++ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(ComposeAppInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (id<ComposeAppKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
 @end
 
 __attribute__((swift_name("RuntimeTransactionCallbacks")))
@@ -3554,6 +3559,48 @@ __attribute__((swift_name("KotlinRegex")))
 @property (readonly) NSString *pattern __attribute__((swift_name("pattern")));
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreModule")))
+@interface ComposeAppKoin_coreModule : ComposeAppBase
+- (instancetype)initWith_createdAtStart:(BOOL)_createdAtStart __attribute__((swift_name("init(_createdAtStart:)"))) __attribute__((objc_designated_initializer));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (ComposeAppKoin_coreKoinDefinition<id> *)factoryQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier definition:(id _Nullable (^)(ComposeAppKoin_coreScope *, ComposeAppKoin_coreParametersHolder *))definition __attribute__((swift_name("factory(qualifier:definition:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (void)includesModule:(ComposeAppKotlinArray<ComposeAppKoin_coreModule *> *)module __attribute__((swift_name("includes(module:)")));
+- (void)includesModule_:(id)module __attribute__((swift_name("includes(module_:)")));
+- (void)indexPrimaryTypeInstanceFactory:(ComposeAppKoin_coreInstanceFactory<id> *)instanceFactory __attribute__((swift_name("indexPrimaryType(instanceFactory:)")));
+- (void)indexSecondaryTypesInstanceFactory:(ComposeAppKoin_coreInstanceFactory<id> *)instanceFactory __attribute__((swift_name("indexSecondaryTypes(instanceFactory:)")));
+- (NSArray<ComposeAppKoin_coreModule *> *)plusModules:(NSArray<ComposeAppKoin_coreModule *> *)modules __attribute__((swift_name("plus(modules:)")));
+- (NSArray<ComposeAppKoin_coreModule *> *)plusModule:(ComposeAppKoin_coreModule *)module __attribute__((swift_name("plus(module:)")));
+- (void)prepareForCreationAtStartInstanceFactory:(ComposeAppKoin_coreSingleInstanceFactory<id> *)instanceFactory __attribute__((swift_name("prepareForCreationAtStart(instanceFactory:)")));
+- (void)scopeScopeSet:(void (^)(ComposeAppKoin_coreScopeDSL *))scopeSet __attribute__((swift_name("scope(scopeSet:)")));
+- (void)scopeQualifier:(id<ComposeAppKoin_coreQualifier>)qualifier scopeSet:(void (^)(ComposeAppKoin_coreScopeDSL *))scopeSet __attribute__((swift_name("scope(qualifier:scopeSet:)")));
+- (ComposeAppKoin_coreKoinDefinition<id> *)singleQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier createdAtStart:(BOOL)createdAtStart definition:(id _Nullable (^)(ComposeAppKoin_coreScope *, ComposeAppKoin_coreParametersHolder *))definition __attribute__((swift_name("single(qualifier:createdAtStart:definition:)")));
+@property (readonly) ComposeAppMutableSet<ComposeAppKoin_coreSingleInstanceFactory<id> *> *eagerInstances __attribute__((swift_name("eagerInstances")));
+@property (readonly) NSString *id __attribute__((swift_name("id")));
+@property (readonly) NSMutableArray<ComposeAppKoin_coreModule *> *includedModules __attribute__((swift_name("includedModules")));
+@property (readonly) BOOL isLoaded __attribute__((swift_name("isLoaded")));
+@property (readonly) ComposeAppMutableDictionary<NSString *, ComposeAppKoin_coreInstanceFactory<id> *> *mappings __attribute__((swift_name("mappings")));
+@property (readonly) ComposeAppMutableSet<id<ComposeAppKoin_coreQualifier>> *scopes __attribute__((swift_name("scopes")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKoinApplication")))
+@interface ComposeAppKoin_coreKoinApplication : ComposeAppBase
+@property (class, readonly, getter=companion) ComposeAppKoin_coreKoinApplicationCompanion *companion __attribute__((swift_name("companion")));
+- (void)allowOverrideOverride:(BOOL)override __attribute__((swift_name("allowOverride(override:)")));
+- (void)close __attribute__((swift_name("close()")));
+- (void)createEagerInstances __attribute__((swift_name("createEagerInstances()")));
+- (ComposeAppKoin_coreKoinApplication *)loggerLogger:(ComposeAppKoin_coreLogger *)logger __attribute__((swift_name("logger(logger:)")));
+- (ComposeAppKoin_coreKoinApplication *)modulesModules:(ComposeAppKotlinArray<ComposeAppKoin_coreModule *> *)modules __attribute__((swift_name("modules(modules:)")));
+- (ComposeAppKoin_coreKoinApplication *)modulesModules_:(NSArray<ComposeAppKoin_coreModule *> *)modules __attribute__((swift_name("modules(modules_:)")));
+- (ComposeAppKoin_coreKoinApplication *)modulesModules__:(ComposeAppKoin_coreModule *)modules __attribute__((swift_name("modules(modules__:)")));
+- (ComposeAppKoin_coreKoinApplication *)optionsOptionValue:(ComposeAppKotlinArray<ComposeAppKotlinPair<ComposeAppKoin_coreKoinOption *, id> *> *)optionValue __attribute__((swift_name("options(optionValue:)")));
+- (ComposeAppKoin_coreKoinApplication *)printLoggerLevel:(ComposeAppKoin_coreLevel *)level __attribute__((swift_name("printLogger(level:)")));
+- (ComposeAppKoin_coreKoinApplication *)propertiesValues:(NSDictionary<NSString *, id> *)values __attribute__((swift_name("properties(values:)")));
+@property (readonly) ComposeAppKoin_coreKoin *koin __attribute__((swift_name("koin")));
+@end
+
 __attribute__((swift_name("KotlinIterator")))
 @protocol ComposeAppKotlinIterator
 @required
@@ -4343,6 +4390,232 @@ __attribute__((swift_name("KotlinSequence")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKoinDefinition")))
+@interface ComposeAppKoin_coreKoinDefinition<R> : ComposeAppBase
+- (instancetype)initWithModule:(ComposeAppKoin_coreModule *)module factory:(ComposeAppKoin_coreInstanceFactory<R> *)factory __attribute__((swift_name("init(module:factory:)"))) __attribute__((objc_designated_initializer));
+- (ComposeAppKoin_coreKoinDefinition<R> *)doCopyModule:(ComposeAppKoin_coreModule *)module factory:(ComposeAppKoin_coreInstanceFactory<R> *)factory __attribute__((swift_name("doCopy(module:factory:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) ComposeAppKoin_coreInstanceFactory<R> *factory __attribute__((swift_name("factory")));
+@property (readonly) ComposeAppKoin_coreModule *module __attribute__((swift_name("module")));
+@end
+
+__attribute__((swift_name("Koin_coreQualifier")))
+@protocol ComposeAppKoin_coreQualifier
+@required
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end
+
+__attribute__((swift_name("Koin_coreLockable")))
+@interface ComposeAppKoin_coreLockable : ComposeAppBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreScope")))
+@interface ComposeAppKoin_coreScope : ComposeAppKoin_coreLockable
+- (instancetype)initWithScopeQualifier:(id<ComposeAppKoin_coreQualifier>)scopeQualifier id:(NSString *)id isRoot:(BOOL)isRoot scopeArchetype:(ComposeAppKoin_coreTypeQualifier * _Nullable)scopeArchetype _koin:(ComposeAppKoin_coreKoin *)_koin __attribute__((swift_name("init(scopeQualifier:id:isRoot:scopeArchetype:_koin:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (void)close __attribute__((swift_name("close()")));
+- (void)declareInstance:(id _Nullable)instance qualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier secondaryTypes:(NSArray<id<ComposeAppKotlinKClass>> *)secondaryTypes allowOverride:(BOOL)allowOverride holdInstance:(BOOL)holdInstance __attribute__((swift_name("declare(instance:qualifier:secondaryTypes:allowOverride:holdInstance:)")));
+- (id)getQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(qualifier:parameters:)")));
+- (id _Nullable)getClazz:(id<ComposeAppKotlinKClass>)clazz qualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(clazz:qualifier:parameters:)")));
+- (NSArray<id> *)getAll __attribute__((swift_name("getAll()")));
+- (NSArray<id> *)getAllClazz:(id<ComposeAppKotlinKClass>)clazz __attribute__((swift_name("getAll(clazz:)")));
+- (ComposeAppKoin_coreKoin *)getKoin __attribute__((swift_name("getKoin()")));
+- (NSArray<NSString *> *)getLinkedScopeIds __attribute__((swift_name("getLinkedScopeIds()")));
+- (id _Nullable)getOrNullQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(qualifier:parameters:)")));
+- (id _Nullable)getOrNullClazz:(id<ComposeAppKotlinKClass>)clazz qualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(clazz:qualifier:parameters:)")));
+- (id)getPropertyKey:(NSString *)key __attribute__((swift_name("getProperty(key:)")));
+- (id)getPropertyKey:(NSString *)key defaultValue:(id)defaultValue __attribute__((swift_name("getProperty(key:defaultValue:)")));
+- (id _Nullable)getPropertyOrNullKey:(NSString *)key __attribute__((swift_name("getPropertyOrNull(key:)")));
+- (ComposeAppKoin_coreScope *)getScopeScopeID:(NSString *)scopeID __attribute__((swift_name("getScope(scopeID:)")));
+- (id _Nullable)getSource __attribute__((swift_name("getSource()")));
+- (id _Nullable)getWithParametersClazz:(id<ComposeAppKotlinKClass>)clazz qualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier parameters:(ComposeAppKoin_coreParametersHolder * _Nullable)parameters __attribute__((swift_name("getWithParameters(clazz:qualifier:parameters:)")));
+- (id<ComposeAppKotlinLazy>)injectQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier mode:(ComposeAppKotlinLazyThreadSafetyMode *)mode parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("inject(qualifier:mode:parameters:)")));
+- (id<ComposeAppKotlinLazy>)injectOrNullQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier mode:(ComposeAppKotlinLazyThreadSafetyMode *)mode parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("injectOrNull(qualifier:mode:parameters:)")));
+- (BOOL)isNotClosed __attribute__((swift_name("isNotClosed()")));
+- (void)linkToScopes:(ComposeAppKotlinArray<ComposeAppKoin_coreScope *> *)scopes __attribute__((swift_name("linkTo(scopes:)")));
+- (void)registerCallbackCallback:(id<ComposeAppKoin_coreScopeCallback>)callback __attribute__((swift_name("registerCallback(callback:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+- (void)unlinkScopes:(ComposeAppKotlinArray<ComposeAppKoin_coreScope *> *)scopes __attribute__((swift_name("unlink(scopes:)")));
+@property (readonly) BOOL closed __attribute__((swift_name("closed")));
+@property (readonly) NSString *id __attribute__((swift_name("id")));
+@property (readonly) BOOL isRoot __attribute__((swift_name("isRoot")));
+@property (readonly) ComposeAppKoin_coreLogger *logger __attribute__((swift_name("logger")));
+@property (readonly) ComposeAppKoin_coreTypeQualifier * _Nullable scopeArchetype __attribute__((swift_name("scopeArchetype")));
+@property (readonly) id<ComposeAppKoin_coreQualifier> scopeQualifier __attribute__((swift_name("scopeQualifier")));
+@property id _Nullable sourceValue __attribute__((swift_name("sourceValue")));
+@end
+
+__attribute__((swift_name("Koin_coreParametersHolder")))
+@interface ComposeAppKoin_coreParametersHolder : ComposeAppBase
+- (instancetype)initWith_values:(NSMutableArray<id> *)_values useIndexedValues:(ComposeAppBoolean * _Nullable)useIndexedValues __attribute__((swift_name("init(_values:useIndexedValues:)"))) __attribute__((objc_designated_initializer));
+- (ComposeAppKoin_coreParametersHolder *)addValue:(id)value __attribute__((swift_name("add(value:)")));
+- (id _Nullable)component1 __attribute__((swift_name("component1()")));
+- (id _Nullable)component2 __attribute__((swift_name("component2()")));
+- (id _Nullable)component3 __attribute__((swift_name("component3()")));
+- (id _Nullable)component4 __attribute__((swift_name("component4()")));
+- (id _Nullable)component5 __attribute__((swift_name("component5()")));
+- (id _Nullable)elementAtI:(int32_t)i clazz:(id<ComposeAppKotlinKClass>)clazz __attribute__((swift_name("elementAt(i:clazz:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (id)get __attribute__((swift_name("get()")));
+- (id _Nullable)getI:(int32_t)i __attribute__((swift_name("get(i:)")));
+- (id _Nullable)getOrNull __attribute__((swift_name("getOrNull()")));
+- (id _Nullable)getOrNullClazz:(id<ComposeAppKotlinKClass>)clazz __attribute__((swift_name("getOrNull(clazz:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (ComposeAppKoin_coreParametersHolder *)insertIndex:(int32_t)index value:(id)value __attribute__((swift_name("insert(index:value:)")));
+- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+- (BOOL)isNotEmpty __attribute__((swift_name("isNotEmpty()")));
+- (void)setI:(int32_t)i t:(id _Nullable)t __attribute__((swift_name("set(i:t:)")));
+- (int32_t)size __attribute__((swift_name("size()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property int32_t index __attribute__((swift_name("index")));
+@property (readonly) ComposeAppBoolean * _Nullable useIndexedValues __attribute__((swift_name("useIndexedValues")));
+@property (readonly) NSArray<id> *values __attribute__((swift_name("values")));
+@end
+
+__attribute__((swift_name("Koin_coreInstanceFactory")))
+@interface ComposeAppKoin_coreInstanceFactory<T> : ComposeAppKoin_coreLockable
+- (instancetype)initWithBeanDefinition:(ComposeAppKoin_coreBeanDefinition<T> *)beanDefinition __attribute__((swift_name("init(beanDefinition:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+@property (class, readonly, getter=companion) ComposeAppKoin_coreInstanceFactoryCompanion *companion __attribute__((swift_name("companion")));
+- (T _Nullable)createContext:(ComposeAppKoin_coreResolutionContext *)context __attribute__((swift_name("create(context:)")));
+- (void)dropScope:(ComposeAppKoin_coreScope * _Nullable)scope __attribute__((swift_name("drop(scope:)")));
+- (void)dropAll __attribute__((swift_name("dropAll()")));
+- (T _Nullable)getContext:(ComposeAppKoin_coreResolutionContext *)context __attribute__((swift_name("get(context:)")));
+- (BOOL)isCreatedContext:(ComposeAppKoin_coreResolutionContext * _Nullable)context __attribute__((swift_name("isCreated(context:)")));
+@property (readonly) ComposeAppKoin_coreBeanDefinition<T> *beanDefinition __attribute__((swift_name("beanDefinition")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreSingleInstanceFactory")))
+@interface ComposeAppKoin_coreSingleInstanceFactory<T> : ComposeAppKoin_coreInstanceFactory<T>
+- (instancetype)initWithBeanDefinition:(ComposeAppKoin_coreBeanDefinition<T> *)beanDefinition __attribute__((swift_name("init(beanDefinition:)"))) __attribute__((objc_designated_initializer));
+- (T _Nullable)createContext:(ComposeAppKoin_coreResolutionContext *)context __attribute__((swift_name("create(context:)")));
+- (void)dropScope:(ComposeAppKoin_coreScope * _Nullable)scope __attribute__((swift_name("drop(scope:)")));
+- (void)dropAll __attribute__((swift_name("dropAll()")));
+- (T _Nullable)getContext:(ComposeAppKoin_coreResolutionContext *)context __attribute__((swift_name("get(context:)")));
+- (BOOL)isCreatedContext:(ComposeAppKoin_coreResolutionContext * _Nullable)context __attribute__((swift_name("isCreated(context:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreScopeDSL")))
+@interface ComposeAppKoin_coreScopeDSL : ComposeAppBase
+- (instancetype)initWithScopeQualifier:(id<ComposeAppKoin_coreQualifier>)scopeQualifier module:(ComposeAppKoin_coreModule *)module __attribute__((swift_name("init(scopeQualifier:module:)"))) __attribute__((objc_designated_initializer));
+- (ComposeAppKoin_coreKoinDefinition<id> *)factoryQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier definition:(id _Nullable (^)(ComposeAppKoin_coreScope *, ComposeAppKoin_coreParametersHolder *))definition __attribute__((swift_name("factory(qualifier:definition:)")));
+- (ComposeAppKoin_coreKoinDefinition<id> *)scopedQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier definition:(id _Nullable (^)(ComposeAppKoin_coreScope *, ComposeAppKoin_coreParametersHolder *))definition __attribute__((swift_name("scoped(qualifier:definition:)")));
+@property (readonly) ComposeAppKoin_coreModule *module __attribute__((swift_name("module")));
+@property (readonly) id<ComposeAppKoin_coreQualifier> scopeQualifier __attribute__((swift_name("scopeQualifier")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKoinApplication.Companion")))
+@interface ComposeAppKoin_coreKoinApplicationCompanion : ComposeAppBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) ComposeAppKoin_coreKoinApplicationCompanion *shared __attribute__((swift_name("shared")));
+- (ComposeAppKoin_coreKoinApplication *)doInit __attribute__((swift_name("doInit()")));
+@end
+
+__attribute__((swift_name("Koin_coreLogger")))
+@interface ComposeAppKoin_coreLogger : ComposeAppBase
+- (instancetype)initWithLevel:(ComposeAppKoin_coreLevel *)level __attribute__((swift_name("init(level:)"))) __attribute__((objc_designated_initializer));
+- (void)debugMsg:(NSString *)msg __attribute__((swift_name("debug(msg:)")));
+- (void)displayLevel:(ComposeAppKoin_coreLevel *)level msg:(NSString *)msg __attribute__((swift_name("display(level:msg:)")));
+- (void)errorMsg:(NSString *)msg __attribute__((swift_name("error(msg:)")));
+- (void)infoMsg:(NSString *)msg __attribute__((swift_name("info(msg:)")));
+- (BOOL)isAtLvl:(ComposeAppKoin_coreLevel *)lvl __attribute__((swift_name("isAt(lvl:)")));
+- (void)logLvl:(ComposeAppKoin_coreLevel *)lvl msg:(NSString *(^)(void))msg __attribute__((swift_name("log(lvl:msg:)")));
+- (void)logLvl:(ComposeAppKoin_coreLevel *)lvl msg_:(NSString *)msg __attribute__((swift_name("log(lvl:msg_:)")));
+- (void)warnMsg:(NSString *)msg __attribute__((swift_name("warn(msg:)")));
+@property ComposeAppKoin_coreLevel *level __attribute__((swift_name("level")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKoinOption")))
+@interface ComposeAppKoin_coreKoinOption : ComposeAppKotlinEnum<ComposeAppKoin_coreKoinOption *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) ComposeAppKoin_coreKoinOption *viewmodelScopeFactory __attribute__((swift_name("viewmodelScopeFactory")));
++ (ComposeAppKotlinArray<ComposeAppKoin_coreKoinOption *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<ComposeAppKoin_coreKoinOption *> *entries __attribute__((swift_name("entries")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinPair")))
+@interface ComposeAppKotlinPair<__covariant A, __covariant B> : ComposeAppBase
+- (instancetype)initWithFirst:(A _Nullable)first second:(B _Nullable)second __attribute__((swift_name("init(first:second:)"))) __attribute__((objc_designated_initializer));
+- (ComposeAppKotlinPair<A, B> *)doCopyFirst:(A _Nullable)first second:(B _Nullable)second __attribute__((swift_name("doCopy(first:second:)")));
+- (BOOL)equalsOther:(id _Nullable)other __attribute__((swift_name("equals(other:)")));
+- (int32_t)hashCode __attribute__((swift_name("hashCode()")));
+- (NSString *)toString __attribute__((swift_name("toString()")));
+@property (readonly) A _Nullable first __attribute__((swift_name("first")));
+@property (readonly) B _Nullable second __attribute__((swift_name("second")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreLevel")))
+@interface ComposeAppKoin_coreLevel : ComposeAppKotlinEnum<ComposeAppKoin_coreLevel *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) ComposeAppKoin_coreLevel *debug __attribute__((swift_name("debug")));
+@property (class, readonly) ComposeAppKoin_coreLevel *info __attribute__((swift_name("info")));
+@property (class, readonly) ComposeAppKoin_coreLevel *warning __attribute__((swift_name("warning")));
+@property (class, readonly) ComposeAppKoin_coreLevel *error __attribute__((swift_name("error")));
+@property (class, readonly) ComposeAppKoin_coreLevel *none __attribute__((swift_name("none")));
++ (ComposeAppKotlinArray<ComposeAppKoin_coreLevel *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<ComposeAppKoin_coreLevel *> *entries __attribute__((swift_name("entries")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKoin")))
+@interface ComposeAppKoin_coreKoin : ComposeAppBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)close __attribute__((swift_name("close()")));
+- (void)createEagerInstances __attribute__((swift_name("createEagerInstances()")));
+- (ComposeAppKoin_coreScope *)createScopeT:(id<ComposeAppKoin_coreKoinScopeComponent>)t __attribute__((swift_name("createScope(t:)")));
+- (ComposeAppKoin_coreScope *)createScopeScopeId:(NSString *)scopeId __attribute__((swift_name("createScope(scopeId:)")));
+- (ComposeAppKoin_coreScope *)createScopeScopeId:(NSString *)scopeId source:(id _Nullable)source scopeArchetype:(ComposeAppKoin_coreTypeQualifier * _Nullable)scopeArchetype __attribute__((swift_name("createScope(scopeId:source:scopeArchetype:)")));
+- (ComposeAppKoin_coreScope *)createScopeScopeId:(NSString *)scopeId qualifier:(id<ComposeAppKoin_coreQualifier>)qualifier source:(id _Nullable)source scopeArchetype:(ComposeAppKoin_coreTypeQualifier * _Nullable)scopeArchetype __attribute__((swift_name("createScope(scopeId:qualifier:source:scopeArchetype:)")));
+- (void)declareInstance:(id _Nullable)instance qualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier secondaryTypes:(NSArray<id<ComposeAppKotlinKClass>> *)secondaryTypes allowOverride:(BOOL)allowOverride __attribute__((swift_name("declare(instance:qualifier:secondaryTypes:allowOverride:)")));
+- (void)deletePropertyKey:(NSString *)key __attribute__((swift_name("deleteProperty(key:)")));
+- (void)deleteScopeScopeId:(NSString *)scopeId __attribute__((swift_name("deleteScope(scopeId:)")));
+- (id)getQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(qualifier:parameters:)")));
+- (id _Nullable)getClazz:(id<ComposeAppKotlinKClass>)clazz qualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(clazz:qualifier:parameters:)")));
+- (NSArray<id> *)getAll __attribute__((swift_name("getAll()")));
+- (ComposeAppKoin_coreScope *)getOrCreateScopeScopeId:(NSString *)scopeId __attribute__((swift_name("getOrCreateScope(scopeId:)")));
+- (ComposeAppKoin_coreScope *)getOrCreateScopeScopeId:(NSString *)scopeId qualifier:(id<ComposeAppKoin_coreQualifier>)qualifier source:(id _Nullable)source __attribute__((swift_name("getOrCreateScope(scopeId:qualifier:source:)")));
+- (id _Nullable)getOrNullQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(qualifier:parameters:)")));
+- (id _Nullable)getOrNullClazz:(id<ComposeAppKotlinKClass>)clazz qualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(clazz:qualifier:parameters:)")));
+- (id _Nullable)getPropertyKey:(NSString *)key __attribute__((swift_name("getProperty(key:)")));
+- (id)getPropertyKey:(NSString *)key defaultValue:(id)defaultValue __attribute__((swift_name("getProperty(key:defaultValue:)")));
+- (ComposeAppKoin_coreScope *)getScopeScopeId:(NSString *)scopeId __attribute__((swift_name("getScope(scopeId:)")));
+- (ComposeAppKoin_coreScope * _Nullable)getScopeOrNullScopeId:(NSString *)scopeId __attribute__((swift_name("getScopeOrNull(scopeId:)")));
+- (id<ComposeAppKotlinLazy>)injectQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier mode:(ComposeAppKotlinLazyThreadSafetyMode *)mode parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("inject(qualifier:mode:parameters:)")));
+- (id<ComposeAppKotlinLazy>)injectOrNullQualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier mode:(ComposeAppKotlinLazyThreadSafetyMode *)mode parameters:(ComposeAppKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("injectOrNull(qualifier:mode:parameters:)")));
+- (void)loadModulesModules:(NSArray<ComposeAppKoin_coreModule *> *)modules allowOverride:(BOOL)allowOverride createEagerInstances:(BOOL)createEagerInstances __attribute__((swift_name("loadModules(modules:allowOverride:createEagerInstances:)")));
+- (void)setPropertyKey:(NSString *)key value:(id)value __attribute__((swift_name("setProperty(key:value:)")));
+- (void)setupLoggerLogger:(ComposeAppKoin_coreLogger *)logger __attribute__((swift_name("setupLogger(logger:)")));
+- (void)unloadModulesModules:(NSArray<ComposeAppKoin_coreModule *> *)modules __attribute__((swift_name("unloadModules(modules:)")));
+@property (readonly) ComposeAppKoin_coreExtensionManager *extensionManager __attribute__((swift_name("extensionManager")));
+@property (readonly) ComposeAppKoin_coreInstanceRegistry *instanceRegistry __attribute__((swift_name("instanceRegistry")));
+@property (readonly) ComposeAppKoin_coreLogger *logger __attribute__((swift_name("logger")));
+@property (readonly) ComposeAppKoin_coreOptionRegistry *optionRegistry __attribute__((swift_name("optionRegistry")));
+@property (readonly) ComposeAppKoin_corePropertyRegistry *propertyRegistry __attribute__((swift_name("propertyRegistry")));
+@property (readonly) ComposeAppKoin_coreCoreResolver *resolver __attribute__((swift_name("resolver")));
+@property (readonly) ComposeAppKoin_coreScopeRegistry *scopeRegistry __attribute__((swift_name("scopeRegistry")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinByteArray")))
 @interface ComposeAppKotlinByteArray : ComposeAppBase
 + (instancetype)arrayWithSize:(int32_t)size __attribute__((swift_name("init(size:)")));
@@ -4499,7 +4772,7 @@ __attribute__((swift_name("KotlinCollection")))
 - (BOOL)containsElement:(id _Nullable)element __attribute__((swift_name("contains(element:)")));
 - (BOOL)containsAllElements:(id)elements __attribute__((swift_name("containsAll(elements:)")));
 - (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
-@property (readonly) int32_t size __attribute__((swift_name("size")));
+@property (readonly, getter=size_) int32_t size __attribute__((swift_name("size")));
 @end
 
 __attribute__((swift_name("KotlinMatchGroupCollection")))
@@ -4565,6 +4838,152 @@ __attribute__((swift_name("KotlinIntRange")))
 @property (readonly) ComposeAppInt *start __attribute__((swift_name("start")));
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreTypeQualifier")))
+@interface ComposeAppKoin_coreTypeQualifier : ComposeAppBase <ComposeAppKoin_coreQualifier>
+- (instancetype)initWithType:(id<ComposeAppKotlinKClass>)type __attribute__((swift_name("init(type:)"))) __attribute__((objc_designated_initializer));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id<ComposeAppKotlinKClass> type __attribute__((swift_name("type")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end
+
+__attribute__((swift_name("KotlinLazy")))
+@protocol ComposeAppKotlinLazy
+@required
+- (BOOL)isInitialized __attribute__((swift_name("isInitialized()")));
+@property (readonly) id _Nullable value __attribute__((swift_name("value")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinLazyThreadSafetyMode")))
+@interface ComposeAppKotlinLazyThreadSafetyMode : ComposeAppKotlinEnum<ComposeAppKotlinLazyThreadSafetyMode *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) ComposeAppKotlinLazyThreadSafetyMode *synchronized __attribute__((swift_name("synchronized")));
+@property (class, readonly) ComposeAppKotlinLazyThreadSafetyMode *publication __attribute__((swift_name("publication")));
+@property (class, readonly) ComposeAppKotlinLazyThreadSafetyMode *none __attribute__((swift_name("none")));
++ (ComposeAppKotlinArray<ComposeAppKotlinLazyThreadSafetyMode *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<ComposeAppKotlinLazyThreadSafetyMode *> *entries __attribute__((swift_name("entries")));
+@end
+
+__attribute__((swift_name("Koin_coreScopeCallback")))
+@protocol ComposeAppKoin_coreScopeCallback
+@required
+- (void)onScopeCloseScope:(ComposeAppKoin_coreScope *)scope __attribute__((swift_name("onScopeClose(scope:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreBeanDefinition")))
+@interface ComposeAppKoin_coreBeanDefinition<T> : ComposeAppBase
+- (instancetype)initWithScopeQualifier:(id<ComposeAppKoin_coreQualifier>)scopeQualifier primaryType:(id<ComposeAppKotlinKClass>)primaryType qualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier definition:(T _Nullable (^)(ComposeAppKoin_coreScope *, ComposeAppKoin_coreParametersHolder *))definition kind:(ComposeAppKoin_coreKind *)kind secondaryTypes:(NSArray<id<ComposeAppKotlinKClass>> *)secondaryTypes __attribute__((swift_name("init(scopeQualifier:primaryType:qualifier:definition:kind:secondaryTypes:)"))) __attribute__((objc_designated_initializer));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (BOOL)hasTypeClazz:(id<ComposeAppKotlinKClass>)clazz __attribute__((swift_name("hasType(clazz:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (BOOL)isClazz:(id<ComposeAppKotlinKClass>)clazz qualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier scopeDefinition:(id<ComposeAppKoin_coreQualifier>)scopeDefinition __attribute__((swift_name("is(clazz:qualifier:scopeDefinition:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property ComposeAppKoin_coreCallbacks<T> *callbacks __attribute__((swift_name("callbacks")));
+@property (readonly) T _Nullable (^definition)(ComposeAppKoin_coreScope *, ComposeAppKoin_coreParametersHolder *) __attribute__((swift_name("definition")));
+@property (readonly) ComposeAppKoin_coreKind *kind __attribute__((swift_name("kind")));
+@property (readonly) id<ComposeAppKotlinKClass> primaryType __attribute__((swift_name("primaryType")));
+@property id<ComposeAppKoin_coreQualifier> _Nullable qualifier __attribute__((swift_name("qualifier")));
+@property (readonly) id<ComposeAppKoin_coreQualifier> scopeQualifier __attribute__((swift_name("scopeQualifier")));
+@property NSArray<id<ComposeAppKotlinKClass>> *secondaryTypes __attribute__((swift_name("secondaryTypes")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreInstanceFactoryCompanion")))
+@interface ComposeAppKoin_coreInstanceFactoryCompanion : ComposeAppBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) ComposeAppKoin_coreInstanceFactoryCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) NSString *ERROR_SEPARATOR __attribute__((swift_name("ERROR_SEPARATOR")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreResolutionContext")))
+@interface ComposeAppKoin_coreResolutionContext : ComposeAppBase
+- (instancetype)initWithLogger:(ComposeAppKoin_coreLogger *)logger scope:(ComposeAppKoin_coreScope *)scope clazz:(id<ComposeAppKotlinKClass>)clazz qualifier:(id<ComposeAppKoin_coreQualifier> _Nullable)qualifier parameters:(ComposeAppKoin_coreParametersHolder * _Nullable)parameters __attribute__((swift_name("init(logger:scope:clazz:qualifier:parameters:)"))) __attribute__((objc_designated_initializer));
+- (ComposeAppKoin_coreResolutionContext *)doNewContextForScopeS:(ComposeAppKoin_coreScope *)s __attribute__((swift_name("doNewContextForScope(s:)")));
+@property (readonly) id<ComposeAppKotlinKClass> clazz __attribute__((swift_name("clazz")));
+@property (readonly) NSString *debugTag __attribute__((swift_name("debugTag")));
+@property (readonly) ComposeAppKoin_coreLogger *logger __attribute__((swift_name("logger")));
+@property (readonly) ComposeAppKoin_coreParametersHolder * _Nullable parameters __attribute__((swift_name("parameters")));
+@property (readonly) id<ComposeAppKoin_coreQualifier> _Nullable qualifier __attribute__((swift_name("qualifier")));
+@property (readonly) ComposeAppKoin_coreScope *scope __attribute__((swift_name("scope")));
+@property ComposeAppKoin_coreTypeQualifier * _Nullable scopeArchetype __attribute__((swift_name("scopeArchetype")));
+@end
+
+__attribute__((swift_name("Koin_coreKoinComponent")))
+@protocol ComposeAppKoin_coreKoinComponent
+@required
+- (ComposeAppKoin_coreKoin *)getKoin __attribute__((swift_name("getKoin()")));
+@end
+
+__attribute__((swift_name("Koin_coreKoinScopeComponent")))
+@protocol ComposeAppKoin_coreKoinScopeComponent <ComposeAppKoin_coreKoinComponent>
+@required
+@property (readonly) ComposeAppKoin_coreScope *scope __attribute__((swift_name("scope")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreExtensionManager")))
+@interface ComposeAppKoin_coreExtensionManager : ComposeAppBase
+- (instancetype)initWith_koin:(ComposeAppKoin_coreKoin *)_koin __attribute__((swift_name("init(_koin:)"))) __attribute__((objc_designated_initializer));
+- (void)close __attribute__((swift_name("close()")));
+- (id<ComposeAppKoin_coreKoinExtension>)getExtensionId:(NSString *)id __attribute__((swift_name("getExtension(id:)")));
+- (id<ComposeAppKoin_coreKoinExtension> _Nullable)getExtensionOrNullId:(NSString *)id __attribute__((swift_name("getExtensionOrNull(id:)")));
+- (void)registerExtensionId:(NSString *)id extension:(id<ComposeAppKoin_coreKoinExtension>)extension __attribute__((swift_name("registerExtension(id:extension:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreInstanceRegistry")))
+@interface ComposeAppKoin_coreInstanceRegistry : ComposeAppBase
+- (instancetype)initWith_koin:(ComposeAppKoin_coreKoin *)_koin __attribute__((swift_name("init(_koin:)"))) __attribute__((objc_designated_initializer));
+- (void)saveMappingAllowOverride:(BOOL)allowOverride mapping:(NSString *)mapping factory:(ComposeAppKoin_coreInstanceFactory<id> *)factory logWarning:(BOOL)logWarning __attribute__((swift_name("saveMapping(allowOverride:mapping:factory:logWarning:)")));
+- (int32_t)size __attribute__((swift_name("size()")));
+@property (readonly) ComposeAppKoin_coreKoin *_koin __attribute__((swift_name("_koin")));
+@property (readonly) NSDictionary<NSString *, ComposeAppKoin_coreInstanceFactory<id> *> *instances __attribute__((swift_name("instances")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreOptionRegistry")))
+@interface ComposeAppKoin_coreOptionRegistry : ComposeAppBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_corePropertyRegistry")))
+@interface ComposeAppKoin_corePropertyRegistry : ComposeAppBase
+- (instancetype)initWith_koin:(ComposeAppKoin_coreKoin *)_koin __attribute__((swift_name("init(_koin:)"))) __attribute__((objc_designated_initializer));
+- (void)close __attribute__((swift_name("close()")));
+- (void)deletePropertyKey:(NSString *)key __attribute__((swift_name("deleteProperty(key:)")));
+- (id _Nullable)getPropertyKey:(NSString *)key __attribute__((swift_name("getProperty(key:)")));
+- (void)savePropertiesProperties:(NSDictionary<NSString *, id> *)properties __attribute__((swift_name("saveProperties(properties:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreCoreResolver")))
+@interface ComposeAppKoin_coreCoreResolver : ComposeAppBase
+- (instancetype)initWith_koin:(ComposeAppKoin_coreKoin *)_koin __attribute__((swift_name("init(_koin:)"))) __attribute__((objc_designated_initializer));
+- (void)addResolutionExtensionResolutionExtension:(id<ComposeAppKoin_coreResolutionExtension>)resolutionExtension __attribute__((swift_name("addResolutionExtension(resolutionExtension:)")));
+- (id _Nullable)resolveFromContextScope:(ComposeAppKoin_coreScope *)scope instanceContext:(ComposeAppKoin_coreResolutionContext *)instanceContext __attribute__((swift_name("resolveFromContext(scope:instanceContext:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreScopeRegistry")))
+@interface ComposeAppKoin_coreScopeRegistry : ComposeAppBase
+- (instancetype)initWith_koin:(ComposeAppKoin_coreKoin *)_koin __attribute__((swift_name("init(_koin:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) ComposeAppKoin_coreScopeRegistryCompanion *companion __attribute__((swift_name("companion")));
+- (void)loadScopesModules:(NSSet<ComposeAppKoin_coreModule *> *)modules __attribute__((swift_name("loadScopes(modules:)")));
+@property (readonly) ComposeAppKoin_coreScope *rootScope __attribute__((swift_name("rootScope")));
+@property (readonly) NSSet<id<ComposeAppKoin_coreQualifier>> *scopeDefinitions __attribute__((swift_name("scopeDefinitions")));
+@end
+
 __attribute__((swift_name("KotlinByteIterator")))
 @interface ComposeAppKotlinByteIterator : ComposeAppBase <ComposeAppKotlinIterator>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -4611,6 +5030,53 @@ __attribute__((swift_name("KotlinIntRange.Companion")))
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) ComposeAppKotlinIntRangeCompanion *shared __attribute__((swift_name("shared")));
 @property (readonly) ComposeAppKotlinIntRange *EMPTY __attribute__((swift_name("EMPTY")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKind")))
+@interface ComposeAppKoin_coreKind : ComposeAppKotlinEnum<ComposeAppKoin_coreKind *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) ComposeAppKoin_coreKind *singleton __attribute__((swift_name("singleton")));
+@property (class, readonly) ComposeAppKoin_coreKind *factory __attribute__((swift_name("factory")));
+@property (class, readonly) ComposeAppKoin_coreKind *scoped __attribute__((swift_name("scoped")));
++ (ComposeAppKotlinArray<ComposeAppKoin_coreKind *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<ComposeAppKoin_coreKind *> *entries __attribute__((swift_name("entries")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreCallbacks")))
+@interface ComposeAppKoin_coreCallbacks<T> : ComposeAppBase
+- (instancetype)initWithOnClose:(void (^ _Nullable)(T _Nullable))onClose __attribute__((swift_name("init(onClose:)"))) __attribute__((objc_designated_initializer));
+- (ComposeAppKoin_coreCallbacks<T> *)doCopyOnClose:(void (^ _Nullable)(T _Nullable))onClose __attribute__((swift_name("doCopy(onClose:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) void (^ _Nullable onClose)(T _Nullable) __attribute__((swift_name("onClose")));
+@end
+
+__attribute__((swift_name("Koin_coreKoinExtension")))
+@protocol ComposeAppKoin_coreKoinExtension
+@required
+- (void)onClose __attribute__((swift_name("onClose()")));
+- (void)onRegisterKoin:(ComposeAppKoin_coreKoin *)koin __attribute__((swift_name("onRegister(koin:)")));
+@end
+
+__attribute__((swift_name("Koin_coreResolutionExtension")))
+@protocol ComposeAppKoin_coreResolutionExtension
+@required
+- (id _Nullable)resolveScope:(ComposeAppKoin_coreScope *)scope instanceContext:(ComposeAppKoin_coreResolutionContext *)instanceContext __attribute__((swift_name("resolve(scope:instanceContext:)")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreScopeRegistry.Companion")))
+@interface ComposeAppKoin_coreScopeRegistryCompanion : ComposeAppBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) ComposeAppKoin_coreScopeRegistryCompanion *shared __attribute__((swift_name("shared")));
 @end
 
 #pragma pop_macro("_Nullable_result")

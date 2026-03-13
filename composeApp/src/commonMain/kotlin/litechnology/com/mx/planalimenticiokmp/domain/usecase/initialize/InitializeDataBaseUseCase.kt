@@ -15,52 +15,21 @@ import litechnology.com.mx.planalimenticiokmp.util.AppDispatchers
  * @author pelkidev
  */
 class InitializeDataBaseUseCase(
-    private val databaseInitializer: DatabaseInitializer,
-    private val dispatcher: AppDispatchers
+    private val databaseInitializer: DatabaseInitializer
 ) {
-    /**
-     * Ejecuta la inicialización de la base de datos si es necesaria.
-     *
-     * @return Resultado de la inicialización:
-     *         - InitializeResult.Success si se inicializó correctamente
-     *         - InitializeResult.AlreadyInitialized si ya estaba inicializada
-     *         - InitializeResult.Error si hubo un error
-     */
-    suspend operator fun invoke(): InitializeResult = withContext(dispatcher.io) {
-        try {
-            val wasInitialized = databaseInitializer.initializeIfNeeded()
-
-            if (wasInitialized) {
-                InitializeResult.Success
-            } else {
-                InitializeResult.AlreadyInitialized
-            }
+    suspend operator fun invoke(): InitializeResult {
+        return try {
+            val initialized = databaseInitializer.initializeIfNeeded()
+            if (initialized) InitializeResult.Success
+            else InitializeResult.AlreadyInitialized
         } catch (e: Exception) {
-            e.printStackTrace()
             InitializeResult.Error(e.message ?: "Error desconocido")
         }
     }
 }
 
-/**
- * Resultado de la inicialización de la base de datos.
- */
 sealed class InitializeResult {
-    /**
-     * La base de datos se inicializó correctamente.
-     */
     object Success : InitializeResult()
-
-    /**
-     * La base de datos ya estaba inicializada.
-     */
     object AlreadyInitialized : InitializeResult()
-
-    /**
-     * Ocurrió un error durante la inicialización.
-     *
-     * @param message Mensaje de error
-     */
-    data class Error(val message: String) : InitializeResult()
+    class Error(val message: String) : InitializeResult()
 }
-
