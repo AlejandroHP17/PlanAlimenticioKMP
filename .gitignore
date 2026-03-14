@@ -1,0 +1,35 @@
+# Gradle
+.gradle/
+build/
+
+# Kotlin
+*.kotlin_module
+
+# Android Studio
+.idea/
+*.iml
+local.properties
+captures/
+
+# Android
+**/build/
+**/out/
+
+# macOS
+.DS_Store
+
+# Xcode
+iosApp/build/
+DerivedData/
+*.xcworkspace
+*.xcuserdata
+*.xcuserstate
+
+# Kotlin Native
+*.klib
+
+# Compose
+.compose/
+
+# Logs
+*.log
