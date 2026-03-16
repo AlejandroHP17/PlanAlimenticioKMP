@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
@@ -79,17 +77,17 @@ kotlin {
 sqldelight {
     databases {
         create("FoodDatabase") {
-            packageName.set("litechnology.com.mx.planalimenticiokmp.data.local.database")
+            packageName.set("liftechnology.com.mx.planalimenticiokmp.data.local.database")
         }
     }
 }
 
 android {
-    namespace = "litechnology.com.mx.planalimenticiokmp"
+    namespace = "liftechnology.com.mx.planalimenticiokmp"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "litechnology.com.mx.planalimenticiokmp"
+        applicationId = "liftechnology.com.mx.planalimenticiokmp"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
