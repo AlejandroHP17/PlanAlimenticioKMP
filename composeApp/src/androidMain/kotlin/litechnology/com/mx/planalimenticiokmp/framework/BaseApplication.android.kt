@@ -1,17 +1,12 @@
-package litechnology.com.mx.planalimenticiokmp
+package litechnology.com.mx.planalimenticiokmp.framework
 
 import android.app.Application
-import android.util.Log
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.SupervisorJob
-import kotlinx.coroutines.launch
+import litechnology.com.mx.planalimenticiokmp.AppInitializer
 import litechnology.com.mx.planalimenticiokmp.di.databaseModule
 import litechnology.com.mx.planalimenticiokmp.di.homeModule
 import litechnology.com.mx.planalimenticiokmp.di.platformDatabaseModule
 import litechnology.com.mx.planalimenticiokmp.di.useCaseModule
 import litechnology.com.mx.planalimenticiokmp.domain.usecase.initialize.InitializeDataBaseUseCase
-import litechnology.com.mx.planalimenticiokmp.domain.usecase.initialize.InitializeResult
 import org.koin.android.ext.android.get
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger

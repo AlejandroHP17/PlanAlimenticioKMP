@@ -1,8 +1,9 @@
-package litechnology.com.mx.planalimenticiokmp
+package litechnology.com.mx.planalimenticiokmp.framework
 
 import android.content.Context
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import litechnology.com.mx.planalimenticiokmp.AssetLoader
 
 class AndroidAssetLoader(private val context: Context) : AssetLoader {
     override suspend fun loadJsonFile(path: String): String? = withContext(Dispatchers.IO) {
