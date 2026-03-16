@@ -61,6 +61,8 @@ kotlin {
             // SQLDelight Runtime (necesario para asFlow, executeAsList, etc.)
             implementation(libs.sqldelight.runtime)
             implementation(libs.sqldelight.coroutines.extensions)
+
+            api(libs.precompose)
         }
         iosMain {
             dependencies {

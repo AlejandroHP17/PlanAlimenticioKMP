@@ -2,10 +2,10 @@ package litechnology.com.mx.planalimenticiokmp.framework
 
 import android.app.Application
 import litechnology.com.mx.planalimenticiokmp.AppInitializer
-import litechnology.com.mx.planalimenticiokmp.di.databaseModule
-import litechnology.com.mx.planalimenticiokmp.di.homeModule
-import litechnology.com.mx.planalimenticiokmp.di.platformDatabaseModule
-import litechnology.com.mx.planalimenticiokmp.di.useCaseModule
+import litechnology.com.mx.planalimenticiokmp.core.di.databaseModule
+import litechnology.com.mx.planalimenticiokmp.core.di.homeModule
+import litechnology.com.mx.planalimenticiokmp.core.di.platformDatabaseModule
+import litechnology.com.mx.planalimenticiokmp.core.di.useCaseModule
 import litechnology.com.mx.planalimenticiokmp.domain.usecase.initialize.InitializeDataBaseUseCase
 import org.koin.android.ext.android.get
 import org.koin.android.ext.koin.androidContext

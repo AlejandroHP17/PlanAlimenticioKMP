@@ -1,4 +1,4 @@
-package litechnology.com.mx.planalimenticiokmp.di
+package litechnology.com.mx.planalimenticiokmp.core.di
 
 import litechnology.com.mx.planalimenticiokmp.data.local.database.AssetLoader
 import litechnology.com.mx.planalimenticiokmp.data.local.driver.DatabaseDriverFactory

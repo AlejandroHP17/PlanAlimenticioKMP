@@ -1,4 +1,4 @@
-package litechnology.com.mx.planalimenticiokmp.theme
+package litechnology.com.mx.planalimenticiokmp.core.theme
 
 import androidx.compose.ui.graphics.Color
 

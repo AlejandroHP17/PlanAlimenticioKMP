@@ -18,10 +18,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import litechnology.com.mx.planalimenticiokmp.theme.colorWhite
-import litechnology.com.mx.planalimenticiokmp.theme.margin8dp
-import litechnology.com.mx.planalimenticiokmp.theme.sizeTextButton
-import litechnology.com.mx.planalimenticiokmp.theme.sizeTitleCard
+import litechnology.com.mx.planalimenticiokmp.core.theme.colorWhite
+import litechnology.com.mx.planalimenticiokmp.core.theme.margin8dp
+import litechnology.com.mx.planalimenticiokmp.core.theme.sizeTextButton
+import litechnology.com.mx.planalimenticiokmp.core.theme.sizeTitleCard
 import litechnology.com.mx.planalimenticiokmp.ui.components.common.getCategoryColor
 import litechnology.com.mx.planalimenticiokmp.ui.mapper.toNonNullList
 import litechnology.com.mx.planalimenticiokmp.util.ModelSubItemCard

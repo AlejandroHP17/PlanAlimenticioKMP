@@ -14,8 +14,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import litechnology.com.mx.planalimenticiokmp.theme.colorWhite
-import litechnology.com.mx.planalimenticiokmp.theme.onPrimaryContainerLight
+import litechnology.com.mx.planalimenticiokmp.core.theme.colorWhite
+import litechnology.com.mx.planalimenticiokmp.core.theme.onPrimaryContainerLight
 
 @Composable
 fun HeaderScreen(

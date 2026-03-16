@@ -1,4 +1,4 @@
-package litechnology.com.mx.planalimenticiokmp.theme
+package litechnology.com.mx.planalimenticiokmp.core.theme
 
 val titleMenu = "Grupos Alimenticios"
 val allCategories = "Todas las Categorias"

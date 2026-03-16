@@ -2,24 +2,24 @@ package litechnology.com.mx.planalimenticiokmp.ui.components.common
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import litechnology.com.mx.planalimenticiokmp.theme.aceiteYGrasaProteina
-import litechnology.com.mx.planalimenticiokmp.theme.aceiteYGrasas
-import litechnology.com.mx.planalimenticiokmp.theme.altoGrasa
-import litechnology.com.mx.planalimenticiokmp.theme.azucar
-import litechnology.com.mx.planalimenticiokmp.theme.azucarGrasa
-import litechnology.com.mx.planalimenticiokmp.theme.bajoGrasa
-import litechnology.com.mx.planalimenticiokmp.theme.cereales
-import litechnology.com.mx.planalimenticiokmp.theme.cerealesGrasa
-import litechnology.com.mx.planalimenticiokmp.theme.colorBgCard
-import litechnology.com.mx.planalimenticiokmp.theme.frutas
-import litechnology.com.mx.planalimenticiokmp.theme.lecheAzucar
-import litechnology.com.mx.planalimenticiokmp.theme.lecheDescremada
-import litechnology.com.mx.planalimenticiokmp.theme.lecheEntera
-import litechnology.com.mx.planalimenticiokmp.theme.lecheSemidescremada
-import litechnology.com.mx.planalimenticiokmp.theme.leguminosas
-import litechnology.com.mx.planalimenticiokmp.theme.moderadoGrasa
-import litechnology.com.mx.planalimenticiokmp.theme.muyBajoGrasa
-import litechnology.com.mx.planalimenticiokmp.theme.verduras
+import litechnology.com.mx.planalimenticiokmp.core.theme.aceiteYGrasaProteina
+import litechnology.com.mx.planalimenticiokmp.core.theme.aceiteYGrasas
+import litechnology.com.mx.planalimenticiokmp.core.theme.altoGrasa
+import litechnology.com.mx.planalimenticiokmp.core.theme.azucar
+import litechnology.com.mx.planalimenticiokmp.core.theme.azucarGrasa
+import litechnology.com.mx.planalimenticiokmp.core.theme.bajoGrasa
+import litechnology.com.mx.planalimenticiokmp.core.theme.cereales
+import litechnology.com.mx.planalimenticiokmp.core.theme.cerealesGrasa
+import litechnology.com.mx.planalimenticiokmp.core.theme.colorBgCard
+import litechnology.com.mx.planalimenticiokmp.core.theme.frutas
+import litechnology.com.mx.planalimenticiokmp.core.theme.lecheAzucar
+import litechnology.com.mx.planalimenticiokmp.core.theme.lecheDescremada
+import litechnology.com.mx.planalimenticiokmp.core.theme.lecheEntera
+import litechnology.com.mx.planalimenticiokmp.core.theme.lecheSemidescremada
+import litechnology.com.mx.planalimenticiokmp.core.theme.leguminosas
+import litechnology.com.mx.planalimenticiokmp.core.theme.moderadoGrasa
+import litechnology.com.mx.planalimenticiokmp.core.theme.muyBajoGrasa
+import litechnology.com.mx.planalimenticiokmp.core.theme.verduras
 
 /**
  * Obtiene el color de la tarjeta según el ID de categoría.

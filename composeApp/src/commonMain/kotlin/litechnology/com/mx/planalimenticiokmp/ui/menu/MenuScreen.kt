@@ -16,15 +16,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import litechnology.com.mx.planalimenticiokmp.presentation.model.viewmodelState.MenuState
 import litechnology.com.mx.planalimenticiokmp.presentation.viewmodel.menu.MenuViewModel
-import litechnology.com.mx.planalimenticiokmp.theme.margin16dp
-import litechnology.com.mx.planalimenticiokmp.theme.margin8dp
-import litechnology.com.mx.planalimenticiokmp.theme.titleMenu
+import litechnology.com.mx.planalimenticiokmp.core.theme.margin16dp
+import litechnology.com.mx.planalimenticiokmp.core.theme.margin8dp
+import litechnology.com.mx.planalimenticiokmp.core.theme.titleMenu
 import litechnology.com.mx.planalimenticiokmp.ui.components.cards.CategoryCard
 import litechnology.com.mx.planalimenticiokmp.ui.components.common.HeaderScreen
 import litechnology.com.mx.planalimenticiokmp.util.ModelItemCard
-import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
-import planalimenticiokmp.composeapp.generated.resources.Res
 
 @Preview(showBackground = true)
 @Composable

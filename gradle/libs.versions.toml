@@ -21,6 +21,7 @@ koin = "4.1.1"
 gson = "2.13.2"
 kotlinStdlib = "2.3.10"
 logger = "2.1.0"
+precompose_version = "1.5.11"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -55,6 +56,8 @@ koin-compose = { group = "io.insert-koin", name = "koin-compose", version.ref = 
 koin-compose-viewmodel = { group = "io.insert-koin", name = "koin-compose-viewmodel", version.ref = "koin" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 logger = { group = "co.touchlab", name = "kermit", version.ref = "logger"}
+precompose = {group = "moe.tlaster", name = "precompose", version.ref = "precompose_version"}
+
 
 [bundles]
 kmp = ["koin-core-kmp", "kotlinx-serialization-json", "navigation-compose", "koin-compose", "koin-compose-viewmodel"]

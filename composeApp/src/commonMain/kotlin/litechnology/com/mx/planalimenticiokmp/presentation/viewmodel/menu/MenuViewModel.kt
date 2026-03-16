@@ -22,7 +22,7 @@ class MenuViewModel (
     /** El estado de la UI para la pantalla. */
     val uiState: StateFlow<MenuState> = _uiState.asStateFlow()
 
-    val logger = Logger.withTag("MenuViewModel")
+    val logger = Logger.withTag("SubMenuViewModel")
 
     /**
      * Obtiene las categorías de la base de datos.
