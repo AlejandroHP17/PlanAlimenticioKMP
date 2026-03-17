@@ -1,10 +1,10 @@
-package liftechnology.com.mx.planalimenticiokmp.core.navigation
+package liftechnology.com.mx.planalimenticiokmp.ui.navigation
 
 import androidx.compose.runtime.Composable
 import liftechnology.com.mx.planalimenticiokmp.ui.menu.MenuScreen
 import liftechnology.com.mx.planalimenticiokmp.ui.search.SearchScreen
 import liftechnology.com.mx.planalimenticiokmp.ui.subMenu.SubMenuScreen
-import liftechnology.com.mx.planalimenticiokmp.util.AppRoutes.Main
+import liftechnology.com.mx.planalimenticiokmp.ui.navigation.AppRoutes.Main
 import moe.tlaster.precompose.navigation.NavHost
 import moe.tlaster.precompose.navigation.Navigator
 import moe.tlaster.precompose.navigation.path

@@ -8,7 +8,7 @@ import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
 
-val homeModule = module{
+val viewModelModule = module{
     viewModelOf(::SharedViewModel)
     viewModelOf(::MenuViewModel)
     viewModelOf(::SubMenuViewModel)

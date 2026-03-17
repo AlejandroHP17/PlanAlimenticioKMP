@@ -1,10 +1,10 @@
-package liftechnology.com.mx.planalimenticiokmp.core.navigation
+package liftechnology.com.mx.planalimenticiokmp.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import liftechnology.com.mx.planalimenticiokmp.presentation.viewmodel.shared.SharedViewModel
-import liftechnology.com.mx.planalimenticiokmp.core.theme.AppTheme
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.AppTheme
 import liftechnology.com.mx.planalimenticiokmp.ui.components.ShowCustomAnimated
 import moe.tlaster.precompose.PreComposeApp
 import moe.tlaster.precompose.navigation.rememberNavigator

@@ -20,10 +20,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import kotlinx.coroutines.delay
 import liftechnology.com.mx.planalimenticiokmp.presentation.model.ToastType
-import liftechnology.com.mx.planalimenticiokmp.core.theme.colorErrorToast
-import liftechnology.com.mx.planalimenticiokmp.core.theme.colorInformativeToast
-import liftechnology.com.mx.planalimenticiokmp.core.theme.colorSuccessToast
-import liftechnology.com.mx.planalimenticiokmp.core.theme.colorWarningToast
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorErrorToast
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorInformativeToast
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorSuccessToast
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorWarningToast
 
 /**
  * Componente que muestra un toast personalizado animado.

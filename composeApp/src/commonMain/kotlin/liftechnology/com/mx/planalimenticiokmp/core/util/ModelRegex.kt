@@ -1,4 +1,4 @@
-package liftechnology.com.mx.planalimenticiokmp.util
+package liftechnology.com.mx.planalimenticiokmp.core.util
 
 object ModelRegex {
     val PRIMITIVE_TEXT = Regex("[^0-9.\\-]")

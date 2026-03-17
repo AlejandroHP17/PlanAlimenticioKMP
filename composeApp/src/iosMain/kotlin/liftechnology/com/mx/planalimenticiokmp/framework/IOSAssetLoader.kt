@@ -3,7 +3,7 @@ package liftechnology.com.mx.planalimenticiokmp.framework
 import kotlinx.cinterop.ExperimentalForeignApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import liftechnology.com.mx.planalimenticiokmp.AssetLoader
+import liftechnology.com.mx.planalimenticiokmp.core.AssetLoader
 import platform.Foundation.NSBundle
 import platform.Foundation.NSString
 import platform.Foundation.NSUTF8StringEncoding

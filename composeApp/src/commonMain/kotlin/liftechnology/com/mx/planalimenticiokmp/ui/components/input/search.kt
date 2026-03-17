@@ -17,7 +17,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import liftechnology.com.mx.planalimenticiokmp.core.theme.colorWhite
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorWhite
 
 
 /**

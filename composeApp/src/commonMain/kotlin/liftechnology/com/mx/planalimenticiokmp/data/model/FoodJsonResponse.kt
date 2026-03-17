@@ -14,7 +14,7 @@ import kotlinx.serialization.json.JsonDecoder
 import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.floatOrNull
 import liftechnology.com.mx.planalimenticiokmp.domain.model.Food
-import liftechnology.com.mx.planalimenticiokmp.util.ModelRegex.PRIMITIVE_TEXT
+import liftechnology.com.mx.planalimenticiokmp.core.util.ModelRegex.PRIMITIVE_TEXT
 
 /**
  * Deserializador seguro que maneja valores numéricos como String o Number,

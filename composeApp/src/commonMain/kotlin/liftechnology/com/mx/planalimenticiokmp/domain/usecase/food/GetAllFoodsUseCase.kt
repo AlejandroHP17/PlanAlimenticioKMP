@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
 import liftechnology.com.mx.planalimenticiokmp.domain.model.Food
 import liftechnology.com.mx.planalimenticiokmp.domain.repository.FoodRepository
-import liftechnology.com.mx.planalimenticiokmp.util.AppDispatchers
+import liftechnology.com.mx.planalimenticiokmp.core.util.AppDispatchers
 
 /**
  * Caso de uso para obtener todos los alimentos almacenados.

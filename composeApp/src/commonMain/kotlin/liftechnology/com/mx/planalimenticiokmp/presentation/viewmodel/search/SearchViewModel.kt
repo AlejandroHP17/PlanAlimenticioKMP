@@ -47,8 +47,8 @@ class SearchViewModel (
             }
 
             var attempts = 0
-            val maxAttempts = 20 // Máximo 2 segundos (20 * 100ms)
-            val delayMs = 100L // Espera 100ms entre intentos
+            val maxAttempts = 2 // Máximo 2 segundos (2 * 1000ms)
+            val delayMs = 1000L // Espera 1000ms entre intentos
 
             // Espera a que la base de datos esté inicializada
             while (result.isEmpty() && attempts < maxAttempts) {

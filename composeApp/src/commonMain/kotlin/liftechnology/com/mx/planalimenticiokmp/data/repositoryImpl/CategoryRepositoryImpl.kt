@@ -5,7 +5,7 @@ import app.cash.sqldelight.coroutines.mapToList
 import kotlinx.coroutines.flow.Flow
 import liftechnology.com.mx.planalimenticiokmp.data.local.database.FoodDatabase
 import liftechnology.com.mx.planalimenticiokmp.domain.repository.CategoryRepository
-import liftechnology.com.mx.planalimenticiokmp.util.AppDispatchers
+import liftechnology.com.mx.planalimenticiokmp.core.util.AppDispatchers
 
 class CategoryRepositoryImpl(
     private val database: FoodDatabase

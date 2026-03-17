@@ -2,7 +2,7 @@ package liftechnology.com.mx.planalimenticiokmp.domain.usecase.food
 
 import kotlinx.coroutines.withContext
 import liftechnology.com.mx.planalimenticiokmp.domain.repository.FoodRepository
-import liftechnology.com.mx.planalimenticiokmp.util.AppDispatchers
+import liftechnology.com.mx.planalimenticiokmp.core.util.AppDispatchers
 
 /**
  * Caso de uso para obtener el conteo de alimentos por categoría.

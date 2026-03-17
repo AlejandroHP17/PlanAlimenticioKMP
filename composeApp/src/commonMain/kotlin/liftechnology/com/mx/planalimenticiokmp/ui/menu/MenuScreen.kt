@@ -16,12 +16,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import liftechnology.com.mx.planalimenticiokmp.presentation.model.viewmodelState.MenuState
 import liftechnology.com.mx.planalimenticiokmp.presentation.viewmodel.menu.MenuViewModel
-import liftechnology.com.mx.planalimenticiokmp.core.theme.margin16dp
-import liftechnology.com.mx.planalimenticiokmp.core.theme.margin8dp
-import liftechnology.com.mx.planalimenticiokmp.core.theme.titleMenu
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin16dp
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin8dp
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.titleMenu
 import liftechnology.com.mx.planalimenticiokmp.ui.components.cards.CategoryCard
 import liftechnology.com.mx.planalimenticiokmp.ui.components.common.HeaderScreen
-import liftechnology.com.mx.planalimenticiokmp.util.ModelItemCard
+import liftechnology.com.mx.planalimenticiokmp.core.util.ModelItemCard
 import org.koin.compose.viewmodel.koinViewModel
 
 @Preview(showBackground = true)

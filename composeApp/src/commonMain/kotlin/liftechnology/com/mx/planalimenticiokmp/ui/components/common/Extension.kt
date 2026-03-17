@@ -2,24 +2,24 @@ package liftechnology.com.mx.planalimenticiokmp.ui.components.common
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import liftechnology.com.mx.planalimenticiokmp.core.theme.aceiteYGrasaProteina
-import liftechnology.com.mx.planalimenticiokmp.core.theme.aceiteYGrasas
-import liftechnology.com.mx.planalimenticiokmp.core.theme.altoGrasa
-import liftechnology.com.mx.planalimenticiokmp.core.theme.azucar
-import liftechnology.com.mx.planalimenticiokmp.core.theme.azucarGrasa
-import liftechnology.com.mx.planalimenticiokmp.core.theme.bajoGrasa
-import liftechnology.com.mx.planalimenticiokmp.core.theme.cereales
-import liftechnology.com.mx.planalimenticiokmp.core.theme.cerealesGrasa
-import liftechnology.com.mx.planalimenticiokmp.core.theme.colorBgCard
-import liftechnology.com.mx.planalimenticiokmp.core.theme.frutas
-import liftechnology.com.mx.planalimenticiokmp.core.theme.lecheAzucar
-import liftechnology.com.mx.planalimenticiokmp.core.theme.lecheDescremada
-import liftechnology.com.mx.planalimenticiokmp.core.theme.lecheEntera
-import liftechnology.com.mx.planalimenticiokmp.core.theme.lecheSemidescremada
-import liftechnology.com.mx.planalimenticiokmp.core.theme.leguminosas
-import liftechnology.com.mx.planalimenticiokmp.core.theme.moderadoGrasa
-import liftechnology.com.mx.planalimenticiokmp.core.theme.muyBajoGrasa
-import liftechnology.com.mx.planalimenticiokmp.core.theme.verduras
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.aceiteYGrasaProteina
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.aceiteYGrasas
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.altoGrasa
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.azucar
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.azucarGrasa
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.bajoGrasa
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.cereales
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.cerealesGrasa
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorBgCard
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.frutas
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.lecheAzucar
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.lecheDescremada
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.lecheEntera
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.lecheSemidescremada
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.leguminosas
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.moderadoGrasa
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.muyBajoGrasa
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.verduras
 
 /**
  * Obtiene el color de la tarjeta según el ID de categoría.

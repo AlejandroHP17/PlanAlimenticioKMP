@@ -18,13 +18,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import liftechnology.com.mx.planalimenticiokmp.core.theme.colorWhite
-import liftechnology.com.mx.planalimenticiokmp.core.theme.margin8dp
-import liftechnology.com.mx.planalimenticiokmp.core.theme.sizeTextButton
-import liftechnology.com.mx.planalimenticiokmp.core.theme.sizeTitleCard
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorWhite
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin8dp
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.sizeTextButton
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.sizeTitleCard
 import liftechnology.com.mx.planalimenticiokmp.ui.components.common.getCategoryColor
-import liftechnology.com.mx.planalimenticiokmp.ui.mapper.toNonNullList
-import liftechnology.com.mx.planalimenticiokmp.util.ModelSubItemCard
+import liftechnology.com.mx.planalimenticiokmp.presentation.mapper.toNonNullList
+import liftechnology.com.mx.planalimenticiokmp.core.util.ModelSubItemCard
 
 
 @Preview(showBackground = true)

@@ -1,5 +1,6 @@
 package liftechnology.com.mx.planalimenticiokmp.domain.usecase.initialize
 
+import co.touchlab.kermit.Logger
 import liftechnology.com.mx.planalimenticiokmp.data.local.database.DatabaseInitializer
 
 /**

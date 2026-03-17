@@ -1,7 +1,7 @@
-package liftechnology.com.mx.planalimenticiokmp.ui.mapper
+package liftechnology.com.mx.planalimenticiokmp.presentation.mapper
 
 import liftechnology.com.mx.planalimenticiokmp.data.entity.FoodEntityMetadata
-import liftechnology.com.mx.planalimenticiokmp.util.ModelSubItemCard
+import liftechnology.com.mx.planalimenticiokmp.core.util.ModelSubItemCard
 
 /**
  * Función de extensión que convierte ModelSubItemCard en una lista de strings formateados.

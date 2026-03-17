@@ -10,9 +10,7 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
@@ -21,14 +19,14 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import liftechnology.com.mx.planalimenticiokmp.presentation.model.viewmodelState.SubMenuState
 import liftechnology.com.mx.planalimenticiokmp.presentation.viewmodel.search.SearchViewModel
-import liftechnology.com.mx.planalimenticiokmp.core.theme.allCategories
-import liftechnology.com.mx.planalimenticiokmp.core.theme.margin16dp
-import liftechnology.com.mx.planalimenticiokmp.core.theme.margin8dp
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.allCategories
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin16dp
+import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin8dp
 import liftechnology.com.mx.planalimenticiokmp.ui.components.cards.FoodCard
 import liftechnology.com.mx.planalimenticiokmp.ui.components.common.HeaderScreen
 import liftechnology.com.mx.planalimenticiokmp.ui.components.input.TextFieldGeneric
-import liftechnology.com.mx.planalimenticiokmp.util.ModelRegex
-import liftechnology.com.mx.planalimenticiokmp.util.ModelSubItemCard
+import liftechnology.com.mx.planalimenticiokmp.core.util.ModelRegex
+import liftechnology.com.mx.planalimenticiokmp.core.util.ModelSubItemCard
 import org.koin.compose.viewmodel.koinViewModel
 
 

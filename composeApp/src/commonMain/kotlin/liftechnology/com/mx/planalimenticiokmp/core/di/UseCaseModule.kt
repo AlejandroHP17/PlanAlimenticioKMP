@@ -7,7 +7,7 @@ import liftechnology.com.mx.planalimenticiokmp.domain.usecase.food.GetFoodCountB
 import liftechnology.com.mx.planalimenticiokmp.domain.usecase.food.GetFoodsByCategoryUseCase
 import liftechnology.com.mx.planalimenticiokmp.domain.usecase.food.SearchFoodsUseCase
 import liftechnology.com.mx.planalimenticiokmp.domain.usecase.initialize.InitializeDataBaseUseCase
-import liftechnology.com.mx.planalimenticiokmp.util.AppDispatchers
+import liftechnology.com.mx.planalimenticiokmp.core.util.AppDispatchers
 import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.module
 

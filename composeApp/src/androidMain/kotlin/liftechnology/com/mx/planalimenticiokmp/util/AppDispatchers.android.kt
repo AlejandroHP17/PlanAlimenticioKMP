@@ -1,4 +1,4 @@
-package liftechnology.com.mx.planalimenticiokmp.util
+package liftechnology.com.mx.planalimenticiokmp.core.util
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
