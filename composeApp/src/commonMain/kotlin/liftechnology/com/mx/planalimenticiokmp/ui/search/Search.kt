@@ -17,7 +17,7 @@ import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import liftechnology.com.mx.planalimenticiokmp.presentation.model.viewmodelState.SubMenuState
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.state.SubMenuState
 import liftechnology.com.mx.planalimenticiokmp.presentation.viewmodel.search.SearchViewModel
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.allCategories
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin16dp
@@ -26,15 +26,9 @@ import liftechnology.com.mx.planalimenticiokmp.ui.components.cards.FoodCard
 import liftechnology.com.mx.planalimenticiokmp.ui.components.common.HeaderScreen
 import liftechnology.com.mx.planalimenticiokmp.ui.components.input.TextFieldGeneric
 import liftechnology.com.mx.planalimenticiokmp.core.util.ModelRegex
-import liftechnology.com.mx.planalimenticiokmp.core.util.ModelSubItemCard
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.ui.ModelSubItemCard
 import org.koin.compose.viewmodel.koinViewModel
 
-
-@Preview(showBackground = true)
-@Composable
-private fun SearchScreenView() {
-    SearchScreen("hola")
-}
 
 @Composable
 fun SearchScreen(
@@ -115,4 +109,11 @@ private fun SearchSectionScreen(
             onWordSearch(it)},
         focusRequester = focusRequester
     )
+}
+
+
+@Preview(showBackground = true)
+@Composable
+private fun SearchScreenView() {
+    SearchScreen("all")
 }

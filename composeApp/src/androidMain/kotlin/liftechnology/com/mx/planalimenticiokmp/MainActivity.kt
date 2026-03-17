@@ -13,7 +13,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import liftechnology.com.mx.planalimenticiokmp.ui.navigation.App
+import liftechnology.com.mx.planalimenticiokmp.ui.App
 import liftechnology.com.mx.planalimenticiokmp.ui.menu.MenuScreen
 
 class MainActivity : ComponentActivity() {
@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun AppAndroidPreview() {
     MenuScreen(
-        onNavigateToMain = { },
+        onNavigateToSubMenu = { },
         onNavigateToSearch = { }
     )
 }

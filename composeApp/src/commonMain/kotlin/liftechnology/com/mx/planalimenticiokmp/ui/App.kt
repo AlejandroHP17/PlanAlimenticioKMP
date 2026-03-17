@@ -1,11 +1,12 @@
-package liftechnology.com.mx.planalimenticiokmp.ui.navigation
+package liftechnology.com.mx.planalimenticiokmp.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import liftechnology.com.mx.planalimenticiokmp.presentation.viewmodel.shared.SharedViewModel
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.AppTheme
-import liftechnology.com.mx.planalimenticiokmp.ui.components.ShowCustomAnimated
+import liftechnology.com.mx.planalimenticiokmp.ui.components.toast.ShowCustomAnimated
+import liftechnology.com.mx.planalimenticiokmp.ui.navigation.AppNavHost
 import moe.tlaster.precompose.PreComposeApp
 import moe.tlaster.precompose.navigation.rememberNavigator
 import org.koin.compose.viewmodel.koinViewModel

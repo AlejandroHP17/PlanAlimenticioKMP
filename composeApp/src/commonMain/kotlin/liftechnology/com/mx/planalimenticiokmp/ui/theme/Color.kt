@@ -8,23 +8,31 @@ val colorBgCard = Color(0xFFE8F1BE)
 val colorWhite = Color(0xFFFFFFFF)
 val colorDisable = Color(0xFFC4C4C4)
 
-val aceiteYGrasaProteina = Color(0xFFFFE5E5) // Aceite y grasas con proteína - Rosa claro
-val aceiteYGrasas = Color(0xFFFFF4E5) // Aceites y grasas - Naranja claro
-val altoGrasa = Color(0xFFFFE5F0) // Alimentos de origen animal alto aporte de grasa - Rosa pastel
-val bajoGrasa = Color(0xFFE5F5FF) // Alimentos de origen animal bajo aporte de grasa - Azul claro
-val moderadoGrasa = Color(0xFFE8F5E9) // Alimentos de origen animal moderado aporte de grasa - Verde claro
-val muyBajoGrasa = Color(0xFFF0E5FF) // Alimentos de origen animal muy bajo aporte de grasa - Morado claro
-val azucarGrasa = Color(0xFFFFF0E5) // Azúcares con grasa - Melocotón claro
-val azucar = Color(0xFFFFFCE5) // Azúcares sin grasa - Amarillo claro
-val cerealesGrasa = Color(0xFFE0F2E0) // Cereales con grasa - Verde menta
-val cereales = Color(0xFFC8E6C9) // Cereales sin grasa - Verde pastel
-val frutas = Color(0xFFFFE5F5) // Frutas - Rosa suave
-val lecheAzucar = Color(0xFFE3F2FD) // Leche con azúcar - Azul cielo
-val lecheDescremada = Color(0xFFE1F5FE) // Leche descremada - Azul muy claro
-val lecheEntera = Color(0xFFFFF9E6) // Leche entera - Crema
-val lecheSemidescremada = Color(0xFFF3E5F5) // Leche semidescremada - Lavanda claro
-val leguminosas = Color(0xFFFFEBEE) // Leguminosas - Salmón claro
-val verduras = Color(0xFFE8F5E9) // Verduras - Verde claro
+val aceiteYGrasaProteina = Color(0xFFEFC4FA) // Rosa
+val aceiteYGrasas = Color(0xFFFBD7FF) // Rosa
+
+val altoGrasa = Color(0xFFD5E0FF) // Azul
+val bajoGrasa = Color(0xFF94C4FC) // Azul
+val moderadoGrasa = Color(0xFF92D6F5) // Azul
+val muyBajoGrasa = Color(0xFFB2CEFC) // Azul
+
+val azucarGrasa = Color(0xFFFFE6D5) //  Naranja
+val azucar = Color(0xFFFFEFDA) // Naranja
+
+val cerealesGrasa = Color(0xFFFFA8A8) // Rojo
+val cereales = Color(0xFFFF9C9C) // Rojo
+
+val frutas = Color(0xFFF0E5FF) // Morado
+
+val lecheAzucar = Color(0xFFCEFFC2) // Verde
+val lecheDescremada = Color(0xFFE8F5E9) // Verde
+val lecheEntera = Color(0xFFE8F5E9) // Verde
+val lecheSemidescremada = Color(0xFFB0FFBE) // Verde
+
+
+val leguminosas = Color(0xFFFAE4A0) // Amarillo
+
+val verduras = Color(0xFF95F6E0) //  Chicle
 
 
 val colorErrorToast = Color(0xFFEA7A7A)

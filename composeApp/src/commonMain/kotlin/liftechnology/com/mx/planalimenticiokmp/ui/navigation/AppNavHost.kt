@@ -4,7 +4,8 @@ import androidx.compose.runtime.Composable
 import liftechnology.com.mx.planalimenticiokmp.ui.menu.MenuScreen
 import liftechnology.com.mx.planalimenticiokmp.ui.search.SearchScreen
 import liftechnology.com.mx.planalimenticiokmp.ui.subMenu.SubMenuScreen
-import liftechnology.com.mx.planalimenticiokmp.ui.navigation.AppRoutes.Main
+import liftechnology.com.mx.planalimenticiokmp.ui.navigation.AppRoutes.NAV
+import liftechnology.com.mx.planalimenticiokmp.ui.navigation.AppRoutes.ARGUMENTS
 import moe.tlaster.precompose.navigation.NavHost
 import moe.tlaster.precompose.navigation.Navigator
 import moe.tlaster.precompose.navigation.path
@@ -14,22 +15,22 @@ fun AppNavHost (navigator: Navigator){
 
     NavHost(
         navigator = navigator,
-        initialRoute = Main.MENU
+        initialRoute = NAV.MENU
     ){
-        scene(route = Main.MENU){
+        scene(route = NAV.MENU){
             MenuScreen(
-                onNavigateToMain = {navigator.navigate("/subMenu/$it") },
-                onNavigateToSearch = { navigator.navigate(Main.buildSearchRoute(null))}
+                onNavigateToSubMenu = {navigator.navigate("/subMenu/$it") },
+                onNavigateToSearch = { navigator.navigate(NAV.buildSearchRoute(null))}
             )
         }
-        scene(route = Main.SUB_MENU) { backStackEntry ->
-            SubMenuScreen(backStackEntry.path<String>("category")!!){
+        scene(route = NAV.SUB_MENU) { backStackEntry ->
+            SubMenuScreen(backStackEntry.path<String>(ARGUMENTS.CATEGORY)!!){
                 navigator.navigate("/search/$it")
             }
         }
 
-        scene(route = Main.SEARCH) { backStackEntry ->
-            SearchScreen(backStackEntry.path<String>("category"))
+        scene(route = NAV.SEARCH) { backStackEntry ->
+            SearchScreen(backStackEntry.path<String>(ARGUMENTS.CATEGORY))
         }
     }
 }

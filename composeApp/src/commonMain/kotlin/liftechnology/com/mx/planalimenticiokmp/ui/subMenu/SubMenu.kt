@@ -14,24 +14,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import liftechnology.com.mx.planalimenticiokmp.presentation.model.viewmodelState.SubMenuState
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.state.SubMenuState
 import liftechnology.com.mx.planalimenticiokmp.presentation.viewmodel.subMenu.SubMenuViewModel
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin16dp
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin8dp
 import liftechnology.com.mx.planalimenticiokmp.ui.components.cards.FoodCard
 import liftechnology.com.mx.planalimenticiokmp.ui.components.common.HeaderScreen
-import liftechnology.com.mx.planalimenticiokmp.core.util.ModelSubItemCard
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.ui.ModelSubItemCard
 import org.koin.compose.viewmodel.koinViewModel
-
-
-@Preview
-@Composable
-private fun SubMenuScreenView()
-{
-    SubMenuScreen(
-        categoria = "VERDURAS",
-        onNavigateToSearch = {})
-}
 
 
 /**
@@ -87,4 +77,13 @@ private fun TableSubMenuScreen(
             )
         }
     }
+}
+
+@Preview
+@Composable
+private fun SubMenuScreenView()
+{
+    SubMenuScreen(
+        categoria = "VERDURAS",
+        onNavigateToSearch = {})
 }

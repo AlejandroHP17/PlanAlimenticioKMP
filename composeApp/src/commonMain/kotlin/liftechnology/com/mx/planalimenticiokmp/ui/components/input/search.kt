@@ -16,6 +16,7 @@ import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorWhite
 
@@ -62,5 +63,14 @@ fun TextFieldGeneric(
             focusedContainerColor = colorWhite,
             unfocusedContainerColor = colorWhite
         )
+    )
+}
+
+@Preview
+@Composable
+fun TextFieldGenericPreview() {
+    TextFieldGeneric(
+        regex = Regex("^[a-zA-Z0-9\\s]*$"),
+        onBoxChanged = {}
     )
 }

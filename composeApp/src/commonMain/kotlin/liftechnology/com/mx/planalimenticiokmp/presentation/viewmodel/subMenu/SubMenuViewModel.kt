@@ -9,9 +9,9 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import liftechnology.com.mx.planalimenticiokmp.data.mapper.subMenu.toSubMenuMapper
+import liftechnology.com.mx.planalimenticiokmp.presentation.mapper.subMenu.toSubMenuMapper
 import liftechnology.com.mx.planalimenticiokmp.domain.usecase.food.GetFoodsByCategoryUseCase
-import liftechnology.com.mx.planalimenticiokmp.presentation.model.viewmodelState.SubMenuState
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.state.SubMenuState
 
 
 class SubMenuViewModel (
@@ -22,34 +22,17 @@ class SubMenuViewModel (
     /** El estado de la UI para la pantalla. */
     val uiState: StateFlow<SubMenuState> = _uiState.asStateFlow()
 
-    val logger = Logger.withTag("SubMenuViewModel")
-
     /**
      * Obtiene los alimentos de una categoría específica.
      * Espera a que la base de datos esté inicializada antes de cargar los alimentos.
      */
     fun getFoodsByCategory(category: String){
         viewModelScope.launch {
-            var result = getFoodsByCategoryUseCase.invokeSuspend(category)
-            var attempts = 0
-            val maxAttempts = 20 // Máximo 2 segundos (20 * 100ms)
-            val delayMs = 100L // Espera 100ms entre intentos
-
-            // Espera a que la base de datos esté inicializada
-            while (result.isEmpty() && attempts < maxAttempts) {
-                delay(delayMs)
-                result = getFoodsByCategoryUseCase.invokeSuspend(category)
-                attempts++
-                if (result.isEmpty()) {
-                    logger.d("Esperando inicialización de BD para categoría '$category'... Intento $attempts/$maxAttempts")
-                }
-            }
+            val result = getFoodsByCategoryUseCase.invokeSuspend(category)
 
             if (result.isNotEmpty()) {
-                logger.d("✅ Alimentos cargados para categoría '$category': ${result.size} alimentos encontrados")
                 _uiState.update { it.copy(foodList = result.toSubMenuMapper()) }
             } else {
-                logger.w("⚠️ No se encontraron alimentos para la categoría '$category' después de $maxAttempts intentos")
                 _uiState.update { it.copy(foodList = emptyList()) }
             }
         }

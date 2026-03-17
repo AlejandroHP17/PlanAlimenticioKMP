@@ -2,7 +2,7 @@ package liftechnology.com.mx.planalimenticiokmp.domain.usecase.food
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
-import liftechnology.com.mx.planalimenticiokmp.domain.model.Food
+import liftechnology.com.mx.planalimenticiokmp.domain.model.FoodDomain
 import liftechnology.com.mx.planalimenticiokmp.domain.repository.FoodRepository
 import liftechnology.com.mx.planalimenticiokmp.core.util.AppDispatchers
 
@@ -25,7 +25,7 @@ class SearchFoodsUseCase(
      * @param searchQuery Término de búsqueda (ej: "manzana", "pollo", etc.)
      * @return Flow que emite una lista de alimentos que coinciden con la búsqueda
      */
-    operator fun invoke(searchQuery: String): Flow<List<Food>> {
+    operator fun invoke(searchQuery: String): Flow<List<FoodDomain>> {
         return repository.searchFoods(searchQuery)
             .flowOn(dispatcher.io)
     }
@@ -36,7 +36,7 @@ class SearchFoodsUseCase(
      * @param searchQuery Término de búsqueda
      * @return Lista de alimentos que coinciden con la búsqueda
      */
-    suspend fun invokeSuspend(searchQuery: String): List<Food> {
+    suspend fun invokeSuspend(searchQuery: String): List<FoodDomain> {
         return repository.searchFoodsSuspend(searchQuery)
     }
 }

@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import liftechnology.com.mx.planalimenticiokmp.data.local.database.FoodDatabase
 import liftechnology.com.mx.planalimenticiokmp.data.local.mapper.FoodMapper
-import liftechnology.com.mx.planalimenticiokmp.domain.model.Food
+import liftechnology.com.mx.planalimenticiokmp.domain.model.FoodDomain
 import liftechnology.com.mx.planalimenticiokmp.domain.repository.FoodRepository
 
 /**
@@ -27,9 +27,9 @@ class FoodRepositoryImpl(
      * Obtiene un flujo de alimentos filtrados por categoría.
      *
      * @param category Nombre de la categoría a filtrar.
-     * @return [Flow] que contiene la lista de alimentos [Food] de la categoría especificada.
+     * @return [Flow] que contiene la lista de alimentos [FoodDomain] de la categoría especificada.
      */
-    override fun getFoodsByCategory(category: String): Flow<List<Food>> {
+    override fun getFoodsByCategory(category: String): Flow<List<FoodDomain>> {
         return database.foodDatabaseQueries
             .selectAllByCategory(category)
             .asFlow()
@@ -41,9 +41,9 @@ class FoodRepositoryImpl(
      * Obtiene de forma suspendida la lista de alimentos por categoría.
      *
      * @param category Nombre de la categoría a filtrar.
-     * @return Lista de modelos de dominio [Food].
+     * @return Lista de modelos de dominio [FoodDomain].
      */
-    override suspend fun getFoodsByCategorySuspend(category: String): List<Food> {
+    override suspend fun getFoodsByCategorySuspend(category: String): List<FoodDomain> {
         return database.foodDatabaseQueries
             .selectAllByCategory(category)
             .executeAsList()
@@ -53,9 +53,9 @@ class FoodRepositoryImpl(
     /**
      * Obtiene un flujo con todos los alimentos disponibles en la base de datos.
      *
-     * @return [Flow] con la lista completa de [Food].
+     * @return [Flow] con la lista completa de [FoodDomain].
      */
-    override fun getAllFoods(): Flow<List<Food>> {
+    override fun getAllFoods(): Flow<List<FoodDomain>> {
         return database.foodDatabaseQueries
             .selectAll()
             .asFlow()
@@ -66,9 +66,9 @@ class FoodRepositoryImpl(
     /**
      * Obtiene de forma suspendida todos los alimentos de la base de datos.
      *
-     * @return Lista completa de modelos de dominio [Food].
+     * @return Lista completa de modelos de dominio [FoodDomain].
      */
-    override suspend fun getAllFoodsSuspend(): List<Food> {
+    override suspend fun getAllFoodsSuspend(): List<FoodDomain> {
         return database.foodDatabaseQueries
             .selectAll()
             .executeAsList()
@@ -81,7 +81,7 @@ class FoodRepositoryImpl(
      * @param searchQuery Término de búsqueda.
      * @return [Flow] con la lista de alimentos que coinciden con la búsqueda.
      */
-    override fun searchFoods(searchQuery: String): Flow<List<Food>> {
+    override fun searchFoods(searchQuery: String): Flow<List<FoodDomain>> {
         return database.foodDatabaseQueries
             .searchFoods(searchQuery)
             .asFlow()
@@ -95,7 +95,7 @@ class FoodRepositoryImpl(
      * @param searchQuery Término de búsqueda.
      * @return Lista de alimentos que coinciden con el criterio.
      */
-    override suspend fun searchFoodsSuspend(searchQuery: String): List<Food> {
+    override suspend fun searchFoodsSuspend(searchQuery: String): List<FoodDomain> {
         return database.foodDatabaseQueries
             .searchFoods(searchQuery)
             .executeAsList()
@@ -106,9 +106,9 @@ class FoodRepositoryImpl(
      * Obtiene un flujo con un alimento específico mediante su identificador.
      *
      * @param id Identificador único del alimento.
-     * @return [Flow] que emite el alimento [Food] o nulo si no se encuentra.
+     * @return [Flow] que emite el alimento [FoodDomain] o nulo si no se encuentra.
      */
-    override fun getFoodById(id: Long): Flow<Food?> {
+    override fun getFoodById(id: Long): Flow<FoodDomain?> {
         return database.foodDatabaseQueries
             .selectById(id)
             .asFlow()
@@ -120,9 +120,9 @@ class FoodRepositoryImpl(
      * Obtiene de forma suspendida un alimento específico por su ID.
      *
      * @param id Identificador único del alimento.
-     * @return Modelo [Food] o nulo si no existe en la base de datos.
+     * @return Modelo [FoodDomain] o nulo si no existe en la base de datos.
      */
-    override suspend fun getFoodByIdSuspend(id: Long): Food? {
+    override suspend fun getFoodByIdSuspend(id: Long): FoodDomain? {
         return database.foodDatabaseQueries
             .selectById(id)
             .executeAsOneOrNull()
@@ -133,11 +133,11 @@ class FoodRepositoryImpl(
      * Inserta una lista completa de alimentos en la base de datos de forma atómica.
      * Utiliza una transacción para optimizar el rendimiento de la inserción masiva.
      *
-     * @param foods Lista de alimentos [Food] a insertar.
+     * @param foodDomains Lista de alimentos [FoodDomain] a insertar.
      */
-    override suspend fun insertAllFoods(foods: List<Food>) {
+    override suspend fun insertAllFoods(foodDomains: List<FoodDomain>) {
         database.foodDatabaseQueries.transaction {
-            foods.forEach { food ->
+            foodDomains.forEach { food ->
                 database.foodDatabaseQueries.insertFood(
                     category = food.category,
                     idCategory = food.idCategory.toLong(),

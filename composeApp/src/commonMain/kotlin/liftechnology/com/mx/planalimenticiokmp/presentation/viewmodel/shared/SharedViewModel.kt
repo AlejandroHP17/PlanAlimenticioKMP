@@ -5,9 +5,9 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
-import liftechnology.com.mx.planalimenticiokmp.presentation.model.event.ShareUiState
-import liftechnology.com.mx.planalimenticiokmp.presentation.model.event.ToastUiState
-import liftechnology.com.mx.planalimenticiokmp.presentation.model.event.TypeToastUi
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.event.ToastTypeEvent
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.state.ShareUiState
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.state.ToastUiState
 
 /**
  * ViewModel compartido para gestionar el estado común de la UI entre diferentes pantallas.
@@ -47,7 +47,7 @@ class SharedViewModel() : ViewModel(){
      */
     fun showToast(
         messageToast: String,
-        typeToast: TypeToastUi = TypeToastUi.SUCCESS
+        typeToast: ToastTypeEvent = ToastTypeEvent.SUCCESS
     ) {
         _uiState.update {
             it.copy(

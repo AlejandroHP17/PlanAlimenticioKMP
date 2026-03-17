@@ -8,10 +8,10 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import liftechnology.com.mx.planalimenticiokmp.data.mapper.menu.toMenuMapper
+import liftechnology.com.mx.planalimenticiokmp.presentation.mapper.menu.toMenuMapper
 import liftechnology.com.mx.planalimenticiokmp.domain.usecase.category.GetAllCategoriesUseCase
 import liftechnology.com.mx.planalimenticiokmp.domain.usecase.initialize.InitializeDataBaseUseCase
-import liftechnology.com.mx.planalimenticiokmp.presentation.model.viewmodelState.MenuState
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.state.MenuState
 
 class MenuViewModel (
     private val getAllCategoriesUseCase: GetAllCategoriesUseCase,
@@ -30,8 +30,6 @@ class MenuViewModel (
      */
     fun getCategories(){
         viewModelScope.launch {
-            logger.d("Iniciando carga de categorías...")
-            
             // Aseguramos que la base de datos esté inicializada (especialmente importante en iOS)
             initializeDataBaseUseCase()
             

@@ -1,4 +1,4 @@
-package liftechnology.com.mx.planalimenticiokmp.data.mapper.subMenu
+package liftechnology.com.mx.planalimenticiokmp.presentation.mapper.subMenu
 
 import liftechnology.com.mx.planalimenticiokmp.data.entity.getAgMonounsaturatedFormatted
 import liftechnology.com.mx.planalimenticiokmp.data.entity.getAgPolyunsaturatedFormatted
@@ -24,10 +24,10 @@ import liftechnology.com.mx.planalimenticiokmp.data.entity.getSeleniumFormatted
 import liftechnology.com.mx.planalimenticiokmp.data.entity.getSodiumFormatted
 import liftechnology.com.mx.planalimenticiokmp.data.entity.getSugarPerEquivalentFormatted
 import liftechnology.com.mx.planalimenticiokmp.data.entity.getVitaminAFormatted
-import liftechnology.com.mx.planalimenticiokmp.domain.model.Food
-import liftechnology.com.mx.planalimenticiokmp.core.util.ModelSubItemCard
+import liftechnology.com.mx.planalimenticiokmp.domain.model.FoodDomain
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.ui.ModelSubItemCard
 
-fun List<Food>.toSubMenuMapper(): List<ModelSubItemCard> {
+fun List<FoodDomain>.toSubMenuMapper(): List<ModelSubItemCard> {
     return this.mapIndexed { _, it ->
         ModelSubItemCard(
             idCard = it.id.toInt(),

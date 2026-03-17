@@ -6,7 +6,7 @@ package liftechnology.com.mx.planalimenticiokmp.domain.model
  *
  * @author pelkidev
  */
-data class Food(
+data class FoodDomain(
     val id: Long = 0,
     val category: String,
     val idCategory: Int,

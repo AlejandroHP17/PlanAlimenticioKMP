@@ -23,45 +23,9 @@ import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin8dp
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.sizeTextButton
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.sizeTitleCard
 import liftechnology.com.mx.planalimenticiokmp.ui.components.common.getCategoryColor
-import liftechnology.com.mx.planalimenticiokmp.presentation.mapper.toNonNullList
-import liftechnology.com.mx.planalimenticiokmp.core.util.ModelSubItemCard
+import liftechnology.com.mx.planalimenticiokmp.presentation.mapper.extension.toNonNullList
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.ui.ModelSubItemCard
 
-
-@Preview(showBackground = true)
-@Composable
-private fun FoodCardView() {
-    val data = ModelSubItemCard(
-        idCard = 1,
-        idCategory = 1,
-        foodTitle = "Acelga cruda",
-        suggestedQuantity = "2 taza",
-        netWeightG = "98 g",
-        roundedGrossWeightG = "120 g",
-        energyKcal = "22 kcal",
-        proteinG = "2.2 g",
-        lipidsG = "0.1 g",
-        carbohydratesG = "4.3 g",
-        fiverG = "3.6 g",
-        vitaminAUgRe = "310.9 µg RE",
-        ascorbicAcidMg = "29.5 mg",
-        folicAcidUg = "14.8 µg",
-        ironNoHemMg = "2.5 mg",
-        potassiumMg = "749.8 mg",
-        hypoglycemicIndex = "64",
-        hypoglycemicLoad = "2.7",
-        sugarPerEquivalentG = null,
-        calciumMg = null,
-        ironMg = null,
-        sodiumMg = null,
-        cholesterolMg = null,
-        seleniumMg = null,
-        phosphorusMg = null,
-        agSaturatedG = null,
-        agMonounsaturatedG = null,
-        agPolyunsaturatedG = null
-    )
-    FoodCard(item = data)
-}
 
 @Composable
 fun FoodCard(
@@ -136,5 +100,44 @@ private fun DetailFoodCard(
                 modifier = Modifier.padding(horizontal = margin8dp)
             )
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun FoodCardView() {
+    val data = ModelSubItemCard(
+        idCard = 1,
+        idCategory = 1,
+        foodTitle = "Acelga cruda",
+        suggestedQuantity = "2 taza",
+        netWeightG = "98 g",
+        roundedGrossWeightG = "120 g",
+        energyKcal = "22 kcal",
+        proteinG = "2.2 g",
+        lipidsG = "0.1 g",
+        carbohydratesG = "4.3 g",
+        fiverG = "3.6 g",
+        vitaminAUgRe = "310.9 µg RE",
+        ascorbicAcidMg = "29.5 mg",
+        folicAcidUg = "14.8 µg",
+        ironNoHemMg = "2.5 mg",
+        potassiumMg = "749.8 mg",
+        hypoglycemicIndex = "64",
+        hypoglycemicLoad = "2.7",
+        sugarPerEquivalentG = null,
+        calciumMg = null,
+        ironMg = null,
+        sodiumMg = null,
+        cholesterolMg = null,
+        seleniumMg = null,
+        phosphorusMg = null,
+        agSaturatedG = null,
+        agMonounsaturatedG = null,
+        agPolyunsaturatedG = null
+    )
+    Column {
+        FoodCard(item = data)
+        DetailFoodCard(item = data)
     }
 }

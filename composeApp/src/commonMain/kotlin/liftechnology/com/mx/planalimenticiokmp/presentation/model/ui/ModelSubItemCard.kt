@@ -1,4 +1,4 @@
-package liftechnology.com.mx.planalimenticiokmp.core.util
+package liftechnology.com.mx.planalimenticiokmp.presentation.model.ui
 
 data class ModelSubItemCard(
     val idCard : Int,

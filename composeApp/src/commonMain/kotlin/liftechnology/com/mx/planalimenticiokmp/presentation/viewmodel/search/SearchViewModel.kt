@@ -3,17 +3,17 @@ package liftechnology.com.mx.planalimenticiokmp.presentation.viewmodel.search
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import co.touchlab.kermit.Logger
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import liftechnology.com.mx.planalimenticiokmp.data.mapper.subMenu.toSubMenuMapper
+import liftechnology.com.mx.planalimenticiokmp.presentation.mapper.subMenu.toSubMenuMapper
 import liftechnology.com.mx.planalimenticiokmp.domain.usecase.food.GetAllFoodsUseCase
 import liftechnology.com.mx.planalimenticiokmp.domain.usecase.food.GetFoodsByCategoryUseCase
 import liftechnology.com.mx.planalimenticiokmp.domain.usecase.food.SearchFoodsUseCase
-import liftechnology.com.mx.planalimenticiokmp.presentation.model.viewmodelState.SubMenuState
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.state.SubMenuState
+import liftechnology.com.mx.planalimenticiokmp.ui.navigation.AppRoutes.ARGUMENTS
 
 
 class SearchViewModel (
@@ -38,31 +38,10 @@ class SearchViewModel (
      */
     fun searchFood(categoria: String?) {
         viewModelScope.launch {
-            var result = if (categoria == null) {
-                // Si no hay categoría, obtener todos los alimentos
-                getAllFoodsUseCase.invokeSuspend()
-            } else {
-                // Si hay categoría, obtener alimentos de esa categoría
-                getFoodsByCategoryUseCase.invokeSuspend(categoria)
-            }
-
-            var attempts = 0
-            val maxAttempts = 2 // Máximo 2 segundos (2 * 1000ms)
-            val delayMs = 1000L // Espera 1000ms entre intentos
-
-            // Espera a que la base de datos esté inicializada
-            while (result.isEmpty() && attempts < maxAttempts) {
-                delay(delayMs)
-                result = if (categoria == null) {
-                    getAllFoodsUseCase.invokeSuspend()
-                } else {
-                    getFoodsByCategoryUseCase.invokeSuspend(categoria)
-                }
-                attempts++
-                if (result.isEmpty()) {
-                    logger.d("Esperando inicialización de BD... Intento $attempts/$maxAttempts")
-                }
-            }
+            val result =
+                categoria?.let{
+                    getFoodsByCategoryUseCase.invokeSuspend(it)
+                }?: getAllFoodsUseCase.invokeSuspend()
 
             if (result.isNotEmpty()) {
                 logger.d("✅ Alimentos cargados: ${result.size} alimentos encontrados")
@@ -70,7 +49,6 @@ class SearchViewModel (
                     it.copy(foodList = result.toSubMenuMapper())
                 }
             } else {
-                logger.w("⚠️ No se encontraron alimentos después de $maxAttempts intentos")
                 _uiState.update {
                     it.copy(foodList = emptyList())
                 }
@@ -87,17 +65,17 @@ class SearchViewModel (
      * @param searchQuery Texto de búsqueda
      * @param categoria Nombre de la categoría o null para buscar en toda la base de datos
      */
-    fun searchByText(searchQuery: String, categoria: String? = "all") {
+    fun searchByText(searchQuery: String, categoria: String? = ARGUMENTS.All) {
         viewModelScope.launch {
             val result =
                 if (searchQuery.isBlank()) {
                 // Si el texto está vacío, mostrar todos los alimentos (de la categoría si se especifica)
-                if (categoria == "all") {
+                if (categoria == ARGUMENTS.All) {
                     getAllFoodsUseCase.invokeSuspend()
                 } else {
                     getFoodsByCategoryUseCase.invokeSuspend(categoria!!)
                 }
-            } else if (categoria!!.contains("all")) {
+            } else if (categoria!!.contains(ARGUMENTS.All)) {
                 // Buscar en toda la base de datos
                 searchFoodsUseCase.invokeSuspend(searchQuery)
             } else {

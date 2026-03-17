@@ -1,4 +1,4 @@
-package liftechnology.com.mx.planalimenticiokmp.presentation.model.event
+package liftechnology.com.mx.planalimenticiokmp.presentation.model.state
 
 /**
  * Representa el estado de la UI compartido entre diferentes pantallas.

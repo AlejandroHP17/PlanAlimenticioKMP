@@ -16,21 +16,7 @@ import androidx.compose.ui.unit.dp
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin8dp
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.sizeTextButton
 import liftechnology.com.mx.planalimenticiokmp.ui.components.common.getCategoryColor
-import liftechnology.com.mx.planalimenticiokmp.core.util.ModelItemCard
-
-@Preview(showBackground = true)
-@Composable
-private fun CategoryCardView() {
-    val data = ModelItemCard(
-        idCard = 1,
-        idCategory = 17,
-        title = "Verduras"
-    )
-    CategoryCard(
-        item = data,
-        onClick = {}
-    )
-}
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.ui.ModelItemCard
 
 @Composable
 fun CategoryCard(
@@ -72,4 +58,18 @@ fun CategoryCard(
             )
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun CategoryCardView() {
+    val data = ModelItemCard(
+        idCard = 1,
+        idCategory = 17,
+        title = "Verduras"
+    )
+    CategoryCard(
+        item = data,
+        onClick = {}
+    )
 }

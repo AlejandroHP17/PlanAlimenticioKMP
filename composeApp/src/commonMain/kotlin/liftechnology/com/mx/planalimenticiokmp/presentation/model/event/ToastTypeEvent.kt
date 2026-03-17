@@ -6,7 +6,7 @@ package liftechnology.com.mx.planalimenticiokmp.presentation.model.event
  * @author Pelkidev
  * @version 1.0.0
  */
-enum class TypeToastUi {
+enum class ToastTypeEvent {
     /** Tipo para mensajes de éxito. */
     SUCCESS,
     /** Tipo para mensajes de error. */

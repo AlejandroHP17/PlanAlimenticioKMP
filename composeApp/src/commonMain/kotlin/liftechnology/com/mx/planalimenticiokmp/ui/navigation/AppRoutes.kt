@@ -12,7 +12,7 @@ object AppRoutes {
     /**
      * Rutas relacionadas con la autenticación (login, registro, recuperación de contraseña).
      */
-    object Main {
+    object NAV {
         const val MENU = "/menu"
         const val SUB_MENU = "/subMenu/{category}"
         const val SEARCH = "/search/{category}"  // El parámetro será opcional mediante defaultValue
@@ -25,8 +25,14 @@ object AppRoutes {
          * @return Ruta formateada para la pantalla de búsqueda
          */
         fun buildSearchRoute(category: String? = null): String {
-            val categoryValue = category ?: "all"
+            val categoryValue = category ?: ARGUMENTS.All
             return "/search/$categoryValue"
         }
+    }
+
+    object ARGUMENTS {
+        const val CATEGORY = "category"
+        const val All = "all"
+
     }
 }

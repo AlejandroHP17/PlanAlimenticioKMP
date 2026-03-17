@@ -1,6 +1,6 @@
-package liftechnology.com.mx.planalimenticiokmp.data.mapper.menu
+package liftechnology.com.mx.planalimenticiokmp.presentation.mapper.menu
 
-import liftechnology.com.mx.planalimenticiokmp.core.util.ModelItemCard
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.ui.ModelItemCard
 
 /**
  * Mapeo de nombres de categorías a sus IDs correspondientes.

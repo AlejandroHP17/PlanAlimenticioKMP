@@ -1,4 +1,4 @@
-package liftechnology.com.mx.planalimenticiokmp.ui.components
+package liftechnology.com.mx.planalimenticiokmp.ui.components.toast
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -16,10 +16,11 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import kotlinx.coroutines.delay
-import liftechnology.com.mx.planalimenticiokmp.presentation.model.ToastType
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.event.ToastTypeEvent
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorErrorToast
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorInformativeToast
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorSuccessToast
@@ -32,7 +33,7 @@ import liftechnology.com.mx.planalimenticiokmp.ui.theme.colorWarningToast
  * @param message El mensaje a mostrar.
  * @param isVisible Si el toast es visible.
  * @param durationMillis La duración en milisegundos para mostrar el toast.
- * @param toastType El tipo de toast (SUCCESS, ERROR, WARNING, INFORMATIVE).
+ * @param toastTypeEvent El tipo de toast (SUCCESS, ERROR, WARNING, INFORMATIVE).
  * @param onDismiss Lambda que se invoca cuando el toast se oculta.
  */
 @Composable
@@ -40,7 +41,7 @@ fun ShowCustomAnimated(
     message: String,
     isVisible: Boolean,
     durationMillis: Long = 3000,
-    toastType: ToastType = ToastType.SUCCESS,
+    toastTypeEvent: ToastTypeEvent = ToastTypeEvent.SUCCESS,
     onDismiss: () -> Unit,
 ) {
     LaunchedEffect(isVisible) {
@@ -69,11 +70,11 @@ fun ShowCustomAnimated(
         ) {
             Box(
                 modifier = Modifier.background(
-                    when (toastType) {
-                        ToastType.SUCCESS -> colorSuccessToast
-                        ToastType.ERROR -> colorErrorToast
-                        ToastType.WARNING -> colorWarningToast
-                        ToastType.INFORMATIVE -> colorInformativeToast
+                    when (toastTypeEvent) {
+                        ToastTypeEvent.SUCCESS -> colorSuccessToast
+                        ToastTypeEvent.ERROR -> colorErrorToast
+                        ToastTypeEvent.WARNING -> colorWarningToast
+                        ToastTypeEvent.INFORMATIVE -> colorInformativeToast
                     },
                     RoundedCornerShape(8.dp)
                 )
@@ -84,4 +85,15 @@ fun ShowCustomAnimated(
             }
         }
     }
+}
+
+@Preview
+@Composable
+fun ToastPreview(){
+    ShowCustomAnimated(
+        message = "Toast de prueba",
+        isVisible = true,
+        toastTypeEvent = ToastTypeEvent.SUCCESS,
+        onDismiss = {}
+    )
 }

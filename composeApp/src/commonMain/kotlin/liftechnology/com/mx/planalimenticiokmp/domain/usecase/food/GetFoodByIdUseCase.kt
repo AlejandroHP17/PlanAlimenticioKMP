@@ -2,7 +2,7 @@ package liftechnology.com.mx.planalimenticiokmp.domain.usecase.food
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
-import liftechnology.com.mx.planalimenticiokmp.domain.model.Food
+import liftechnology.com.mx.planalimenticiokmp.domain.model.FoodDomain
 import liftechnology.com.mx.planalimenticiokmp.domain.repository.FoodRepository
 import liftechnology.com.mx.planalimenticiokmp.core.util.AppDispatchers
 
@@ -24,7 +24,7 @@ class GetFoodByIdUseCase(
      * @param id ID del alimento
      * @return Flow que emite el alimento encontrado o null si no existe
      */
-    operator fun invoke(id: Long): Flow<Food?> {
+    operator fun invoke(id: Long): Flow<FoodDomain?> {
         return repository.getFoodById(id)
             .flowOn(dispatcher.io)
     }
@@ -35,7 +35,7 @@ class GetFoodByIdUseCase(
      * @param id ID del alimento
      * @return El alimento encontrado o null si no existe
      */
-    suspend fun invokeSuspend(id: Long): Food? {
+    suspend fun invokeSuspend(id: Long): FoodDomain? {
         return repository.getFoodByIdSuspend(id)
     }
 }

@@ -1,7 +1,7 @@
 package liftechnology.com.mx.planalimenticiokmp.data.local.mapper
 
 import liftechnology.com.mx.planalimenticiokmp.data.local.database.FoodEntity
-import liftechnology.com.mx.planalimenticiokmp.domain.model.Food
+import liftechnology.com.mx.planalimenticiokmp.domain.model.FoodDomain
 
 /**
  * Mapper para convertir entre entidades de SQLDelight y modelos de dominio.
@@ -11,8 +11,8 @@ object FoodMapper {
     /**
      * Convierte una entidad de SQLDelight (FoodEntity) a un modelo de dominio (Food).
      */
-    fun toDomain(entity: FoodEntity): Food {
-        return Food(
+    fun toDomain(entity: FoodEntity): FoodDomain {
+        return FoodDomain(
             id = entity.id,
             category = entity.category,
             idCategory = entity.idCategory.toInt(),

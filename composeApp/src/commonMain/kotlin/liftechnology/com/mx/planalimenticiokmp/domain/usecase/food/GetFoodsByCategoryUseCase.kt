@@ -2,7 +2,7 @@ package liftechnology.com.mx.planalimenticiokmp.domain.usecase.food
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
-import liftechnology.com.mx.planalimenticiokmp.domain.model.Food
+import liftechnology.com.mx.planalimenticiokmp.domain.model.FoodDomain
 import liftechnology.com.mx.planalimenticiokmp.domain.repository.FoodRepository
 import liftechnology.com.mx.planalimenticiokmp.core.util.AppDispatchers
 
@@ -25,7 +25,7 @@ class GetFoodsByCategoryUseCase(
      * @param category Nombre de la categoría (ej: "VERDURAS", "FRUTAS", "CEREALES SIN GRASA", etc.)
      * @return Flow que emite una lista de alimentos de la categoría especificada
      */
-    operator fun invoke(category: String): Flow<List<Food>> {
+    operator fun invoke(category: String): Flow<List<FoodDomain>> {
         return repository.getFoodsByCategory(category)
             .flowOn(dispatcher.io)
     }
@@ -36,7 +36,7 @@ class GetFoodsByCategoryUseCase(
      * @param category Nombre de la categoría
      * @return Lista de alimentos de la categoría especificada
      */
-    suspend fun invokeSuspend(category: String): List<Food> {
+    suspend fun invokeSuspend(category: String): List<FoodDomain> {
         return repository.getFoodsByCategorySuspend(category)
     }
 }

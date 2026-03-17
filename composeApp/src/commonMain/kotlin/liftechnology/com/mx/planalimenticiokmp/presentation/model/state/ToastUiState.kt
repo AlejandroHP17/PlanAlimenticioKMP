@@ -1,4 +1,6 @@
-package liftechnology.com.mx.planalimenticiokmp.presentation.model.event
+package liftechnology.com.mx.planalimenticiokmp.presentation.model.state
+
+import liftechnology.com.mx.planalimenticiokmp.presentation.model.event.ToastTypeEvent
 
 /**
  * Representa el estado de un mensaje toast en la UI.
@@ -12,5 +14,5 @@ package liftechnology.com.mx.planalimenticiokmp.presentation.model.event
 data class ToastUiState(
     val messageToast: String,
     val showToast: Boolean,
-    val typeToast: TypeToastUi = TypeToastUi.SUCCESS
+    val typeToast: ToastTypeEvent = ToastTypeEvent.SUCCESS
 )

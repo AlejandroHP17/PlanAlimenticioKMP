@@ -1,6 +1,5 @@
 package liftechnology.com.mx.planalimenticiokmp.domain.usecase.initialize
 
-import co.touchlab.kermit.Logger
 import liftechnology.com.mx.planalimenticiokmp.data.local.database.DatabaseInitializer
 
 /**
@@ -9,7 +8,6 @@ import liftechnology.com.mx.planalimenticiokmp.data.local.database.DatabaseIniti
  * con los alimentos del Sistema Mexicano de Alimentos y Equivalentes.
  *
  * @param databaseInitializer Inicializador de la base de datos
- * @param dispatcher Dispatcher de corrutinas
  *
  * @author pelkidev
  */
