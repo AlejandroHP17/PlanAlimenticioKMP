@@ -11,9 +11,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import liftechnology.com.mx.planalimenticiokmp.presentation.model.state.MenuState
 import liftechnology.com.mx.planalimenticiokmp.presentation.viewmodel.menu.MenuViewModel
 import liftechnology.com.mx.planalimenticiokmp.ui.theme.margin16dp
@@ -22,6 +26,8 @@ import liftechnology.com.mx.planalimenticiokmp.ui.theme.titleMenu
 import liftechnology.com.mx.planalimenticiokmp.ui.components.cards.CategoryCard
 import liftechnology.com.mx.planalimenticiokmp.ui.components.common.HeaderScreen
 import liftechnology.com.mx.planalimenticiokmp.presentation.model.ui.ModelItemCard
+import liftechnology.com.mx.planalimenticiokmp.presentation.viewmodel.search.SearchViewModel
+import liftechnology.com.mx.planalimenticiokmp.ui.components.search.TableSearchMenuScreen
 import org.koin.compose.viewmodel.koinViewModel
 
 /**
@@ -33,10 +39,12 @@ import org.koin.compose.viewmodel.koinViewModel
 @Composable
 fun MenuScreen(
     menuViewModel: MenuViewModel = koinViewModel(),
+    searchViewModel: SearchViewModel = koinViewModel(),
     onNavigateToSubMenu: (String) -> Unit,
-    onNavigateToSearch: () -> Unit
 ) {
     val uiState by menuViewModel.uiState.collectAsState()
+    val uiStateSearch by searchViewModel.uiState.collectAsStateWithLifecycle()
+    var showSearch by remember {mutableStateOf(true)}
 
     LaunchedEffect(Unit) {
         menuViewModel.getCategories()
@@ -45,15 +53,25 @@ fun MenuScreen(
     Column {
         HeaderScreen(
             title = titleMenu,
-            onNavigateToSearch = {onNavigateToSearch()}
+            onWordSearch = { searchQuery ->
+                showSearch = searchQuery.isEmpty()
+                // Cuando el usuario escribe, buscar por texto
+                searchViewModel.searchByText(searchQuery, )
+            }
         )
 
         Spacer(modifier = Modifier.padding(8.dp))
 
-        TableMenuScreen(
-            uiState = uiState,
-            onNavigateToMain = { onNavigateToSubMenu(it) }
-        )
+        if(showSearch){
+            TableMenuScreen(
+                uiState = uiState,
+                onNavigateToMain = { onNavigateToSubMenu(it) }
+            )
+        }else{
+            TableSearchMenuScreen(
+                uiState = uiStateSearch
+            )
+        }
     }
 }
 

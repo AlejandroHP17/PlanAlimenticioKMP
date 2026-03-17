@@ -40,6 +40,6 @@ class MainActivity : ComponentActivity() {
 fun AppAndroidPreview() {
     MenuScreen(
         onNavigateToSubMenu = { },
-        onNavigateToSearch = { }
+        //onNavigateToSearch = { }
     )
 }

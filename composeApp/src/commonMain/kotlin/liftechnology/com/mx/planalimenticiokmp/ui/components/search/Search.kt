@@ -1,4 +1,4 @@
-package liftechnology.com.mx.planalimenticiokmp.ui.search
+package liftechnology.com.mx.planalimenticiokmp.ui.components.search
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -29,54 +29,8 @@ import liftechnology.com.mx.planalimenticiokmp.core.util.ModelRegex
 import liftechnology.com.mx.planalimenticiokmp.presentation.model.ui.ModelSubItemCard
 import org.koin.compose.viewmodel.koinViewModel
 
-
 @Composable
-fun SearchScreen(
-    categoria: String? = null,  // Ahora es nullable para permitir búsquedas sin categoría
-    searchViewModel: SearchViewModel = koinViewModel(),
-) {
-
-    val uiState by searchViewModel.uiState.collectAsStateWithLifecycle()
-    val focusRequester = remember { FocusRequester() }
-    val keyboardController = LocalSoftwareKeyboardController.current
-
-    LaunchedEffect(categoria) {
-        searchViewModel.searchFood(categoria)
-    }
-
-    // Solicitar foco y mostrar teclado cuando la pantalla se compone por primera vez
-    LaunchedEffect(Unit) {
-        focusRequester.requestFocus()
-        keyboardController?.show()
-    }
-
-    Column {
-        HeaderScreen(
-            title = categoria ?: allCategories,
-            isSearch = false,
-            onNavigateToSearch = {}
-        )
-
-        Spacer(modifier = Modifier.padding(8.dp))
-
-        SearchSectionScreen(
-            onWordSearch = { searchQuery ->
-                // Cuando el usuario escribe, buscar por texto
-                searchViewModel.searchByText(searchQuery, categoria)
-            },
-            focusRequester = focusRequester
-        )
-
-        Spacer(modifier = Modifier.padding(8.dp))
-
-        TableSearchMenuScreen(
-            uiState = uiState
-        )
-    }
-}
-
-@Composable
-private fun TableSearchMenuScreen(
+fun TableSearchMenuScreen(
     uiState: SubMenuState
 ){
     LazyColumn(
@@ -94,26 +48,4 @@ private fun TableSearchMenuScreen(
             )
         }
     }
-}
-
-
-@Composable
-private fun SearchSectionScreen(
-    onWordSearch: (String) -> Unit,
-    focusRequester: FocusRequester
-){
-
-    TextFieldGeneric(
-        regex = ModelRegex.SIMPLE_TEXT,
-        onBoxChanged = {
-            onWordSearch(it)},
-        focusRequester = focusRequester
-    )
-}
-
-
-@Preview(showBackground = true)
-@Composable
-private fun SearchScreenView() {
-    SearchScreen("all")
 }
