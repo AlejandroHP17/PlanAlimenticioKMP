@@ -27,16 +27,8 @@ object AppRoutes {
          */
         fun buildSearchRoute(category: String? = null): String {
             val categoryValue = category ?: "all"
-            return "search/$categoryValue"
+            return "/search/$categoryValue"
         }
-    }
-
-
-    /**
-     * Rutas relacionadas con la pantalla de inicio (splash).
-     */
-    object Splash {
-        const val SPLASH = "splash"
     }
 }
 

@@ -33,13 +33,12 @@ fun TextFieldGeneric(
     onBoxChanged: (String) -> Unit,
     focusRequester: FocusRequester? = null,
 ) {
-
-    var changeText by remember { mutableStateOf("") }
-
+    var myText by remember { mutableStateOf("") }
     OutlinedTextField(
-        value = changeText,
+        value = myText,
         onValueChange = { newValue: String ->
             if (newValue.isEmpty() || regex.matches(newValue)) {
+                myText = newValue
                 onBoxChanged(newValue)
             }
         },

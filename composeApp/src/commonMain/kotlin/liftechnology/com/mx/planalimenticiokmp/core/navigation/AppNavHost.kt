@@ -16,7 +16,7 @@ fun AppNavHost (navigator: Navigator){
         navigator = navigator,
         initialRoute = Main.MENU
     ){
-        scene(route = "/menu"){
+        scene(route = Main.MENU){
             MenuScreen(
                 onNavigateToMain = {navigator.navigate("/subMenu/$it") },
                 onNavigateToSearch = { navigator.navigate(Main.buildSearchRoute(null))}

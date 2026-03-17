@@ -10,7 +10,9 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
@@ -33,7 +35,7 @@ import org.koin.compose.viewmodel.koinViewModel
 @Preview(showBackground = true)
 @Composable
 private fun SearchScreenView() {
-
+    SearchScreen("hola")
 }
 
 @Composable
@@ -108,9 +110,11 @@ private fun SearchSectionScreen(
     onWordSearch: (String) -> Unit,
     focusRequester: FocusRequester
 ){
+
     TextFieldGeneric(
         regex = ModelRegex.SIMPLE_TEXT,
-        onBoxChanged = {onWordSearch(it)},
+        onBoxChanged = {
+            onWordSearch(it)},
         focusRequester = focusRequester
     )
 }

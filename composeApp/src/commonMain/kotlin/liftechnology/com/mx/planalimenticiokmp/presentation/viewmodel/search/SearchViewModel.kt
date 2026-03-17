@@ -87,16 +87,17 @@ class SearchViewModel (
      * @param searchQuery Texto de búsqueda
      * @param categoria Nombre de la categoría o null para buscar en toda la base de datos
      */
-    fun searchByText(searchQuery: String, categoria: String? = null) {
+    fun searchByText(searchQuery: String, categoria: String? = "all") {
         viewModelScope.launch {
-            val result = if (searchQuery.isBlank()) {
+            val result =
+                if (searchQuery.isBlank()) {
                 // Si el texto está vacío, mostrar todos los alimentos (de la categoría si se especifica)
-                if (categoria == null) {
+                if (categoria == "all") {
                     getAllFoodsUseCase.invokeSuspend()
                 } else {
-                    getFoodsByCategoryUseCase.invokeSuspend(categoria)
+                    getFoodsByCategoryUseCase.invokeSuspend(categoria!!)
                 }
-            } else if (categoria == null) {
+            } else if (categoria!!.contains("all")) {
                 // Buscar en toda la base de datos
                 searchFoodsUseCase.invokeSuspend(searchQuery)
             } else {
