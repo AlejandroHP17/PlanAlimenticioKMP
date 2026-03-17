@@ -8,26 +8,26 @@ val colorBgCard = Color(0xFFE8F1BE)
 val colorWhite = Color(0xFFFFFFFF)
 val colorDisable = Color(0xFFC4C4C4)
 
-val aceiteYGrasaProteina = Color(0xFFEFC4FA) // Rosa
+val aceiteYGrasaProteina = Color(0xFFFBD7FF) // Rosa
 val aceiteYGrasas = Color(0xFFFBD7FF) // Rosa
 
 val altoGrasa = Color(0xFFD5E0FF) // Azul
-val bajoGrasa = Color(0xFF94C4FC) // Azul
-val moderadoGrasa = Color(0xFF92D6F5) // Azul
-val muyBajoGrasa = Color(0xFFB2CEFC) // Azul
+val bajoGrasa = Color(0xFFD5E0FF) // Azul
+val moderadoGrasa = Color(0xFFD5E0FF) // Azul
+val muyBajoGrasa = Color(0xFFD5E0FF) // Azul
 
-val azucarGrasa = Color(0xFFFFE6D5) //  Naranja
+val azucarGrasa = Color(0xFFFFEFDA) //  Naranja
 val azucar = Color(0xFFFFEFDA) // Naranja
 
-val cerealesGrasa = Color(0xFFFFA8A8) // Rojo
-val cereales = Color(0xFFFF9C9C) // Rojo
+val cerealesGrasa = Color(0xFFF8BABA) // Rojo
+val cereales = Color(0xFFF8BABA) // Rojo
 
 val frutas = Color(0xFFF0E5FF) // Morado
 
 val lecheAzucar = Color(0xFFCEFFC2) // Verde
-val lecheDescremada = Color(0xFFE8F5E9) // Verde
-val lecheEntera = Color(0xFFE8F5E9) // Verde
-val lecheSemidescremada = Color(0xFFB0FFBE) // Verde
+val lecheDescremada = Color(0xFFCEFFC2) // Verde
+val lecheEntera = Color(0xFFCEFFC2) // Verde
+val lecheSemidescremada = Color(0xFFCEFFC2) // Verde
 
 
 val leguminosas = Color(0xFFFAE4A0) // Amarillo
